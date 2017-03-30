@@ -11,22 +11,24 @@ namespace sul\utils;
 
 use sul\utils\ItemData;
 
-class Item {
+public class Item
+{
 
-	/** @var string */
-	public $name;
+    /** @var string */
+    public $name;
 
-	/** @var ItemData */
-	public $minecraft, $pocket;
+    /** @var ItemData */
+    public $minecraft, $pocket;
 
-	/** @var int */
-	public $stack;
+    /** @var int */
+    public $stack;
 
-	function __construct(string $name, ItemData $minecraft, ItemData $pocket, int $stack) {
-		$this->name = $name;
-		$this->minecraft = $minecraft;
-		$this->pocket = $pocket;
-		$this->stack = $stack;
-	}
+    public function __construct(string $name, ItemData $minecraft, ItemData $pocket, int $stack)
+    {
+        $this->name = $name;
+        $this->minecraft = $minecraft;
+        $this->pocket = $pocket;
+        $this->stack = $stack;
+    }
 
 }

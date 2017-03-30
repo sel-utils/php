@@ -9,23 +9,13 @@
  */
 namespace sul\utils;
 
-public class ItemData
+public class BlockData
 {
 
     /** @var bool */
     public $exists;
 
     /** @var int */
-    public $id;
-
-    /** @var int */
-    public $meta;
-
-    public function __construct($exists, int $id, int $meta)
-    {
-        $this->exists = $exists;
-        $this->id = $id;
-        $this->meta = $meta;
-    }
+    public $id, $meta;
 
 }

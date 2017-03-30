@@ -9,23 +9,21 @@
  */
 namespace sul\utils;
 
-public class ItemData
+public class Attribute
 {
 
-    /** @var bool */
-    public $exists;
-
-    /** @var int */
+    /** @var string */
     public $id;
 
-    /** @var int */
-    public $meta;
+    /** @var float */
+    public $min, $max, $default;
 
-    public function __construct($exists, int $id, int $meta)
+    public function __construct(string $id, $min, $max, $default)
     {
-        $this->exists = $exists;
         $this->id = $id;
-        $this->meta = $meta;
+        $this->min = $min;
+        $this->max = $max;
+        $this->default = $default;
     }
 
 }
