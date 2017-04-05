@@ -1,5 +1,5 @@
 {
-    "name": "sel-utils/php",
+    "name": "sel-project/sel-utils",
     "type": "library",
     "description": "Automatically generated libraries for Minecraft and Minecraft: Pocket Edition",
     "keywords": ["minecraft", "mcpe", "utils", "protocol", "lib", "library"],
