@@ -1,0 +1,15 @@
+{
+    "name": "sel-utils/php",
+    "type": "library",
+    "description": "Automatically generated libraries for Minecraft and Minecraft: Pocket Edition",
+    "keywords": ["minecraft", "mcpe", "utils", "protocol", "lib", "library"],
+    "license": "GPL-3.0",
+    "require": {
+        "php": ">=7.0.*"
+    },
+    "autoload": {
+        "psr-0": {
+            "SUL": "src"
+        }
+    }
+}
