@@ -21,14 +21,12 @@ class SetTime extends Packet
     public const SERVERBOUND = false;
 
     public $time;
-    public $daylightCycle;
 
     public function __constructor() {}
 
-    public function __constructor($time, $daylightCycle)
+    public function __constructor($time)
     {
         $this->time = $time;
-        $this->daylightCycle = $daylightCycle;
     }
 
 }

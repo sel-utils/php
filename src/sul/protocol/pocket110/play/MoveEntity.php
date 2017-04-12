@@ -25,16 +25,18 @@ class MoveEntity extends Packet
     public $pitch;
     public $headYaw;
     public $yaw;
+    public $onGround;
 
     public function __constructor() {}
 
-    public function __constructor($entityId, $position, $pitch, $headYaw, $yaw)
+    public function __constructor($entityId, $position, $pitch, $headYaw, $yaw, $onGround)
     {
         $this->entityId = $entityId;
         $this->position = $position;
         $this->pitch = $pitch;
         $this->headYaw = $headYaw;
         $this->yaw = $yaw;
+        $this->onGround = $onGround;
     }
 
 }

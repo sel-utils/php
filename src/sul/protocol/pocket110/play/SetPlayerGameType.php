@@ -23,6 +23,7 @@ class SetPlayerGameType extends Packet
     // gamemode
     public const SURVIVAL = 0;
     public const CREATIVE = 1;
+    public const ADVENTURE = 2;
 
     public $gamemode;
 

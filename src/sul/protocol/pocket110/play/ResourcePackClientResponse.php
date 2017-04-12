@@ -31,7 +31,7 @@ class ResourcePackClientResponse extends Packet
 
     public function __constructor() {}
 
-    public function __constructor($status, \sul\protocol\pocket110\types\PackIds $packIds)
+    public function __constructor($status, $packIds)
     {
         $this->status = $status;
         $this->packIds = $packIds;

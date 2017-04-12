@@ -33,6 +33,7 @@ class StartGame extends Packet
     // world gamemode
     public const SURVIVAL = 0;
     public const CREATIVE = 1;
+    public const ADVENTURE = 2;
 
     // difficulty
     public const PEACEFUL = 0;
@@ -40,8 +41,8 @@ class StartGame extends Packet
     public const NORMAL = 2;
     public const HARD = 3;
 
-    // edition
-    public const CLASSIC = 0;
+    // version
+    public const VANILLA = 0;
     public const EDUCATION = 1;
 
     public $entityId;
@@ -57,7 +58,7 @@ class StartGame extends Packet
     public $spawnPosition;
     public $loadedInCreative;
     public $time;
-    public $edition;
+    public $version;
     public $rainLevel;
     public $lightingLevel;
     public $commandsEnabled;
@@ -68,7 +69,7 @@ class StartGame extends Packet
 
     public function __constructor() {}
 
-    public function __constructor($entityId, $runtimeId, $position, $yaw, $pitch, $seed, $dimension, $generator, $worldGamemode, $difficulty, $spawnPosition, $loadedInCreative, $time, $edition, $rainLevel, $lightingLevel, $commandsEnabled, $textureRequired, $gameRules, $levelId, $worldName)
+    public function __constructor($entityId, $runtimeId, $position, $yaw, $pitch, $seed, $dimension, $generator, $worldGamemode, $difficulty, $spawnPosition, $loadedInCreative, $time, $version, $rainLevel, $lightingLevel, $commandsEnabled, $textureRequired, $gameRules, $levelId, $worldName)
     {
         $this->entityId = $entityId;
         $this->runtimeId = $runtimeId;
@@ -83,7 +84,7 @@ class StartGame extends Packet
         $this->spawnPosition = $spawnPosition;
         $this->loadedInCreative = $loadedInCreative;
         $this->time = $time;
-        $this->edition = $edition;
+        $this->version = $version;
         $this->rainLevel = $rainLevel;
         $this->lightingLevel = $lightingLevel;
         $this->commandsEnabled = $commandsEnabled;

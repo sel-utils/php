@@ -20,20 +20,20 @@ class Login extends Packet
     public const CLIENTBOUND = false;
     public const SERVERBOUND = true;
 
-    // edition
-    public const CLASSIC = 0;
+    // version
+    public const VANILLA = 0;
     public const EDUCATION = 1;
 
-    public $protocol;
-    public $edition;
+    public $protocol = 110;
+    public $version;
     public $body;
 
     public function __constructor() {}
 
-    public function __constructor($protocol, $edition, $body)
+    public function __constructor($protocol, $version, $body)
     {
         $this->protocol = $protocol;
-        $this->edition = $edition;
+        $this->version = $version;
         $this->body = $body;
     }
 
