@@ -696,6 +696,7 @@ class Items
         self::add(new Item("baked potato", new ItemData(393, 0), new ItemData(393, 0), 64));
         self::add(new Item("poisonous potato", new ItemData(394, 0), new ItemData(394, 0), 64));
         self::add(new Item("empty map", new ItemData(395, 0), new ItemData(395, 0), 64));
+        self::add(new Item("empty locator map", null, new ItemData(395, 2), 64));
         self::add(new Item("golden carrot", new ItemData(396, 0), new ItemData(396, 0), 64));
         self::add(new Item("skeleton skull", new ItemData(397, 0), new ItemData(397, 0), 64));
         self::add(new Item("wither skeleton skull", new ItemData(397, 1), new ItemData(397, 1), 64));
