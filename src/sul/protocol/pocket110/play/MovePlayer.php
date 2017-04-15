@@ -32,10 +32,11 @@ class MovePlayer extends Packet
     public $yaw;
     public $animation;
     public $onGround;
+    public $?;
 
     public function __constructor() {}
 
-    public function __constructor($entityId, $position, $pitch, $headYaw, $yaw, $animation, $onGround)
+    public function __constructor($entityId, $position, $pitch, $headYaw, $yaw, $animation, $onGround, $?)
     {
         $this->entityId = $entityId;
         $this->position = $position;
@@ -44,6 +45,7 @@ class MovePlayer extends Packet
         $this->yaw = $yaw;
         $this->animation = $animation;
         $this->onGround = $onGround;
+        $this->? = $?;
     }
 
 }

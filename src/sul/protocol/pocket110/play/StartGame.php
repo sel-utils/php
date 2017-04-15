@@ -20,6 +20,11 @@ class StartGame extends Packet
     public const CLIENTBOUND = true;
     public const SERVERBOUND = false;
 
+    // gamemode
+    public const SURVIVAL = 0;
+    public const CREATIVE = 1;
+    public const ADVENTURE = 2;
+
     // dimension
     public const OVERWORLD = 0;
     public const NETHER = 1;
@@ -29,11 +34,6 @@ class StartGame extends Packet
     public const OLD = 0;
     public const INFINITE = 1;
     public const FLAT = 2;
-
-    // world gamemode
-    public const SURVIVAL = 0;
-    public const CREATIVE = 1;
-    public const ADVENTURE = 2;
 
     // difficulty
     public const PEACEFUL = 0;
@@ -47,6 +47,7 @@ class StartGame extends Packet
 
     public $entityId;
     public $runtimeId;
+    public $gamemode;
     public $position;
     public $yaw;
     public $pitch;
@@ -66,13 +67,15 @@ class StartGame extends Packet
     public $gameRules;
     public $levelId;
     public $worldName;
+    public $premiumWorldTemplate;
 
     public function __constructor() {}
 
-    public function __constructor($entityId, $runtimeId, $position, $yaw, $pitch, $seed, $dimension, $generator, $worldGamemode, $difficulty, $spawnPosition, $loadedInCreative, $time, $version, $rainLevel, $lightingLevel, $commandsEnabled, $textureRequired, $gameRules, $levelId, $worldName)
+    public function __constructor($entityId, $runtimeId, $gamemode, $position, $yaw, $pitch, $seed, $dimension, $generator, $worldGamemode, $difficulty, $spawnPosition, $loadedInCreative, $time, $version, $rainLevel, $lightingLevel, $commandsEnabled, $textureRequired, $gameRules, $levelId, $worldName, $premiumWorldTemplate)
     {
         $this->entityId = $entityId;
         $this->runtimeId = $runtimeId;
+        $this->gamemode = $gamemode;
         $this->position = $position;
         $this->yaw = $yaw;
         $this->pitch = $pitch;
@@ -92,6 +95,7 @@ class StartGame extends Packet
         $this->gameRules = $gameRules;
         $this->levelId = $levelId;
         $this->worldName = $worldName;
+        $this->premiumWorldTemplate = $premiumWorldTemplate;
     }
 
 }
