@@ -27,7 +27,6 @@ class HubInfo extends Packet
     public $serverId;
     public $reservedUuids;
     public $displayName;
-    public $onlineMode;
     public $gamesInfo;
     public $online;
     public $max;
@@ -37,13 +36,12 @@ class HubInfo extends Packet
 
     public function __constructor() {}
 
-    public function __constructor($time, $serverId, $reservedUuids, $displayName, $onlineMode, $gamesInfo, $online, $max, $language, $acceptedLanguages, $additionalJson)
+    public function __constructor($time, $serverId, $reservedUuids, $displayName, $gamesInfo, $online, $max, $language, $acceptedLanguages, $additionalJson)
     {
         $this->time = $time;
         $this->serverId = $serverId;
         $this->reservedUuids = $reservedUuids;
         $this->displayName = $displayName;
-        $this->onlineMode = $onlineMode;
         $this->gamesInfo = $gamesInfo;
         $this->online = $online;
         $this->max = $max;
