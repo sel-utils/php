@@ -25,16 +25,18 @@ class AddItemEntity extends Packet
     public $item;
     public $position;
     public $motion;
+    public $metadata;
 
     public function __constructor() {}
 
-    public function __constructor($entityId, $runtimeId, \sul\protocol\pocket110\types\Slot $item, $position, $motion)
+    public function __constructor($entityId, $runtimeId, \sul\protocol\pocket110\types\Slot $item, $position, $motion, \sul\metadata\pocket110\Metadata $metadata)
     {
         $this->entityId = $entityId;
         $this->runtimeId = $runtimeId;
         $this->item = $item;
         $this->position = $position;
         $this->motion = $motion;
+        $this->metadata = $metadata;
     }
 
 }
