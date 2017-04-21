@@ -26,13 +26,15 @@ class Animate extends Packet
 
     public $action;
     public $entityId;
+    public $?;
 
     public function __constructor() {}
 
-    public function __constructor($action, $entityId)
+    public function __constructor($action, $entityId, $?)
     {
         $this->action = $action;
         $this->entityId = $entityId;
+        $this->? = $?;
     }
 
 }
