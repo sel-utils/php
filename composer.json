@@ -3,7 +3,7 @@
     "type": "library",
     "description": "Automatically generated libraries for Minecraft and Minecraft: Pocket Edition",
     "keywords": ["minecraft", "mcpe", "utils", "protocol", "lib", "library"],
-    "license": "GPL-3.0",
+    "license": "MIT",
     "require": {
         "php": ">=7.0.0"
     },
