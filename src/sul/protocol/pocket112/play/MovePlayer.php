@@ -23,7 +23,8 @@ class MovePlayer extends Packet
     // animation
     public const FULL = 0;
     public const NONE = 1;
-    public const ROTATION = 2;
+    public const TELEPORT = 2;
+    public const PITCH = 3;
 
     public $entityId;
     public $position;
@@ -33,10 +34,12 @@ class MovePlayer extends Packet
     public $animation;
     public $onGround;
     public $?;
+    public $?;
+    public $?;
 
     public function __constructor() {}
 
-    public function __constructor($entityId, $position, $pitch, $headYaw, $yaw, $animation, $onGround, $?)
+    public function __constructor($entityId, $position, $pitch, $headYaw, $yaw, $animation, $onGround, $?, $?, $?)
     {
         $this->entityId = $entityId;
         $this->position = $position;
@@ -45,6 +48,8 @@ class MovePlayer extends Packet
         $this->yaw = $yaw;
         $this->animation = $animation;
         $this->onGround = $onGround;
+        $this->? = $?;
+        $this->? = $?;
         $this->? = $?;
     }
 
