@@ -28,7 +28,7 @@ class CraftingEvent extends Packet
 
     public function __constructor() {}
 
-    public function __constructor($window, $type, $uuid, $input, $output)
+    public function __constructor($window, $type, \sul\protocol\pocket112\types\McpeUuid $uuid, $input, $output)
     {
         $this->window = $window;
         $this->type = $type;

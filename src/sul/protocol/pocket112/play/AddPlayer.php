@@ -34,7 +34,7 @@ class AddPlayer extends Packet
 
     public function __constructor() {}
 
-    public function __constructor($uuid, $username, $entityId, $runtimeId, $position, $motion, $pitch, $headYaw, $yaw, \sul\protocol\pocket112\types\Slot $heldItem, \sul\metadata\pocket112\Metadata $metadata)
+    public function __constructor(\sul\protocol\pocket112\types\McpeUuid $uuid, $username, $entityId, $runtimeId, $position, $motion, $pitch, $headYaw, $yaw, \sul\protocol\pocket112\types\Slot $heldItem, \sul\metadata\pocket112\Metadata $metadata)
     {
         $this->uuid = $uuid;
         $this->username = $username;
