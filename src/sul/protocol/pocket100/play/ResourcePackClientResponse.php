@@ -37,5 +37,19 @@ class ResourcePackClientResponse extends Packet
         $this->packIds = $packIds;
     }
 
+    public function getId()
+    {
+        return self::ID;
+    }
+
+    public function encode()
+    {
+
+
+    }
+
+    public function decode()
+    {}
+
 }
 

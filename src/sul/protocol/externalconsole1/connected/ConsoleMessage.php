@@ -35,5 +35,21 @@ class ConsoleMessage extends Packet
         $this->message = $message;
     }
 
+    public function getId()
+    {
+        return self::ID;
+    }
+
+    public function encode()
+    {
+
+
+
+
+    }
+
+    public function decode()
+    {}
+
 }
 

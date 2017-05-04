@@ -31,5 +31,19 @@ class ClientConnect extends Packet
         $this->pingId = $pingId;
     }
 
+    public function getId()
+    {
+        return self::ID;
+    }
+
+    public function encode()
+    {
+
+
+    }
+
+    public function decode()
+    {}
+
 }
 

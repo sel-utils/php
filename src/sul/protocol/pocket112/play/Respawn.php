@@ -29,5 +29,18 @@ class Respawn extends Packet
         $this->position = $position;
     }
 
+    public function getId()
+    {
+        return self::ID;
+    }
+
+    public function encode()
+    {
+
+    }
+
+    public function decode()
+    {}
+
 }
 

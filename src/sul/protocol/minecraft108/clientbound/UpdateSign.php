@@ -31,5 +31,19 @@ class UpdateSign extends Packet
         $this->lines = $lines;
     }
 
+    public function getId()
+    {
+        return self::ID;
+    }
+
+    public function encode()
+    {
+
+
+    }
+
+    public function decode()
+    {}
+
 }
 

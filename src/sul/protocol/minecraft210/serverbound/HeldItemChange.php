@@ -29,5 +29,18 @@ class HeldItemChange extends Packet
         $this->slot = $slot;
     }
 
+    public function getId()
+    {
+        return self::ID;
+    }
+
+    public function encode()
+    {
+
+    }
+
+    public function decode()
+    {}
+
 }
 

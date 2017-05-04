@@ -29,5 +29,18 @@ class Command extends Packet
         $this->command = $command;
     }
 
+    public function getId()
+    {
+        return self::ID;
+    }
+
+    public function encode()
+    {
+
+    }
+
+    public function decode()
+    {}
+
 }
 

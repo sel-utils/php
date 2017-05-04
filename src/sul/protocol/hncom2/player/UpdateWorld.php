@@ -31,5 +31,19 @@ class UpdateWorld extends Packet
         $this->world = $world;
     }
 
+    public function getId()
+    {
+        return self::ID;
+    }
+
+    public function encode()
+    {
+
+
+    }
+
+    public function decode()
+    {}
+
 }
 

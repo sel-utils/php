@@ -31,5 +31,19 @@ class Encapsulated extends Packet
         $this->encapsulation = $encapsulation;
     }
 
+    public function getId()
+    {
+        return self::ID;
+    }
+
+    public function encode()
+    {
+
+
+    }
+
+    public function decode()
+    {}
+
 }
 

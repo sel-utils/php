@@ -31,5 +31,19 @@ class SetPassengers extends Packet
         $this->passengers = $passengers;
     }
 
+    public function getId()
+    {
+        return self::ID;
+    }
+
+    public function encode()
+    {
+
+
+    }
+
+    public function decode()
+    {}
+
 }
 

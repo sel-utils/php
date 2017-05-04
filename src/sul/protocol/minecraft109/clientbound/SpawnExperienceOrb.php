@@ -33,5 +33,20 @@ class SpawnExperienceOrb extends Packet
         $this->count = $count;
     }
 
+    public function getId()
+    {
+        return self::ID;
+    }
+
+    public function encode()
+    {
+
+
+
+    }
+
+    public function decode()
+    {}
+
 }
 

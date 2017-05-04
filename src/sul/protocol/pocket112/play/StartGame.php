@@ -98,5 +98,40 @@ class StartGame extends Packet
         $this->premiumWorldTemplate = $premiumWorldTemplate;
     }
 
+    public function getId()
+    {
+        return self::ID;
+    }
+
+    public function encode()
+    {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    }
+
+    public function decode()
+    {}
+
 }
 

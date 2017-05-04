@@ -40,5 +40,22 @@ class NodeInfo extends Packet
         $this->additionalJson = $additionalJson;
     }
 
+    public function getId()
+    {
+        return self::ID;
+    }
+
+    public function encode()
+    {
+
+
+
+
+
+    }
+
+    public function decode()
+    {}
+
 }
 

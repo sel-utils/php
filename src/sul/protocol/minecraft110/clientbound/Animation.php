@@ -39,5 +39,19 @@ class Animation extends Packet
         $this->animation = $animation;
     }
 
+    public function getId()
+    {
+        return self::ID;
+    }
+
+    public function encode()
+    {
+
+
+    }
+
+    public function decode()
+    {}
+
 }
 

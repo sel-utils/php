@@ -64,5 +64,24 @@ class JoinGame extends Packet
         $this->reducedDebug = $reducedDebug;
     }
 
+    public function getId()
+    {
+        return self::ID;
+    }
+
+    public function encode()
+    {
+
+
+
+
+
+
+
+    }
+
+    public function decode()
+    {}
+
 }
 

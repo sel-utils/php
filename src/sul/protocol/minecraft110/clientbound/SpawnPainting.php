@@ -43,5 +43,22 @@ class SpawnPainting extends Packet
         $this->direction = $direction;
     }
 
+    public function getId()
+    {
+        return self::ID;
+    }
+
+    public function encode()
+    {
+
+
+
+
+
+    }
+
+    public function decode()
+    {}
+
 }
 

@@ -31,5 +31,19 @@ class BossBar extends Packet
         $this->action = $action;
     }
 
+    public function getId()
+    {
+        return self::ID;
+    }
+
+    public function encode()
+    {
+
+
+    }
+
+    public function decode()
+    {}
+
 }
 

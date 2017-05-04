@@ -31,5 +31,19 @@ class CreativeInventoryAction extends Packet
         $this->clickedItem = $clickedItem;
     }
 
+    public function getId()
+    {
+        return self::ID;
+    }
+
+    public function encode()
+    {
+
+
+    }
+
+    public function decode()
+    {}
+
 }
 

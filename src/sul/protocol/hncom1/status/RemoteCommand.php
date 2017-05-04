@@ -40,5 +40,21 @@ class RemoteCommand extends Packet
         $this->commandId = $commandId;
     }
 
+    public function getId()
+    {
+        return self::ID;
+    }
+
+    public function encode()
+    {
+
+
+
+
+    }
+
+    public function decode()
+    {}
+
 }
 

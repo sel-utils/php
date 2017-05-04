@@ -37,5 +37,22 @@ class AddItemEntity extends Packet
         $this->motion = $motion;
     }
 
+    public function getId()
+    {
+        return self::ID;
+    }
+
+    public function encode()
+    {
+
+
+
+
+
+    }
+
+    public function decode()
+    {}
+
 }
 

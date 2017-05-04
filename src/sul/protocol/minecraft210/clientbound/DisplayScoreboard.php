@@ -36,5 +36,19 @@ class DisplayScoreboard extends Packet
         $this->scoreName = $scoreName;
     }
 
+    public function getId()
+    {
+        return self::ID;
+    }
+
+    public function encode()
+    {
+
+
+    }
+
+    public function decode()
+    {}
+
 }
 

@@ -31,5 +31,19 @@ class UpdatePacketLoss extends Packet
         $this->packetLoss = $packetLoss;
     }
 
+    public function getId()
+    {
+        return self::ID;
+    }
+
+    public function encode()
+    {
+
+
+    }
+
+    public function decode()
+    {}
+
 }
 

@@ -31,5 +31,19 @@ class Ping extends Packet
         $this->magic = $magic;
     }
 
+    public function getId()
+    {
+        return self::ID;
+    }
+
+    public function encode()
+    {
+
+
+    }
+
+    public function decode()
+    {}
+
 }
 

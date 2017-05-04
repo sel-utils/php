@@ -33,5 +33,20 @@ class SetExperience extends Packet
         $this->totalExperience = $totalExperience;
     }
 
+    public function getId()
+    {
+        return self::ID;
+    }
+
+    public function encode()
+    {
+
+
+
+    }
+
+    public function decode()
+    {}
+
 }
 

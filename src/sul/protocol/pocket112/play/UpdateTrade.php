@@ -45,5 +45,26 @@ class UpdateTrade extends Packet
         $this->offers = $offers;
     }
 
+    public function getId()
+    {
+        return self::ID;
+    }
+
+    public function encode()
+    {
+
+
+
+
+
+
+
+
+
+    }
+
+    public function decode()
+    {}
+
 }
 

@@ -31,5 +31,19 @@ class PlayerListHeaderAndFooter extends Packet
         $this->footer = $footer;
     }
 
+    public function getId()
+    {
+        return self::ID;
+    }
+
+    public function encode()
+    {
+
+
+    }
+
+    public function decode()
+    {}
+
 }
 

@@ -39,5 +39,20 @@ class PlayerAbilities extends Packet
         $this->fovModifier = $fovModifier;
     }
 
+    public function getId()
+    {
+        return self::ID;
+    }
+
+    public function encode()
+    {
+
+
+
+    }
+
+    public function decode()
+    {}
+
 }
 

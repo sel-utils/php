@@ -58,5 +58,21 @@ class Respawn extends Packet
         $this->levelType = $levelType;
     }
 
+    public function getId()
+    {
+        return self::ID;
+    }
+
+    public function encode()
+    {
+
+
+
+
+    }
+
+    public function decode()
+    {}
+
 }
 

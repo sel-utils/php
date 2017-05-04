@@ -31,5 +31,19 @@ class TelemetryEvent extends Packet
         $this->eventId = $eventId;
     }
 
+    public function getId()
+    {
+        return self::ID;
+    }
+
+    public function encode()
+    {
+
+
+    }
+
+    public function decode()
+    {}
+
 }
 

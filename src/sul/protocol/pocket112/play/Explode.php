@@ -33,5 +33,20 @@ class Explode extends Packet
         $this->destroyedBlocks = $destroyedBlocks;
     }
 
+    public function getId()
+    {
+        return self::ID;
+    }
+
+    public function encode()
+    {
+
+
+
+    }
+
+    public function decode()
+    {}
+
 }
 

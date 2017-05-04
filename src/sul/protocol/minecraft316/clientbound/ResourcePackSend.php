@@ -31,5 +31,19 @@ class ResourcePackSend extends Packet
         $this->hash = $hash;
     }
 
+    public function getId()
+    {
+        return self::ID;
+    }
+
+    public function encode()
+    {
+
+
+    }
+
+    public function decode()
+    {}
+
 }
 

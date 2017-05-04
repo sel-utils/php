@@ -31,5 +31,19 @@ class EnchantItem extends Packet
         $this->enchantment = $enchantment;
     }
 
+    public function getId()
+    {
+        return self::ID;
+    }
+
+    public function encode()
+    {
+
+
+    }
+
+    public function decode()
+    {}
+
 }
 

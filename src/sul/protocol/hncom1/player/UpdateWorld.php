@@ -33,5 +33,20 @@ class UpdateWorld extends Packet
         $this->dimension = $dimension;
     }
 
+    public function getId()
+    {
+        return self::ID;
+    }
+
+    public function encode()
+    {
+
+
+
+    }
+
+    public function decode()
+    {}
+
 }
 

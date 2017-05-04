@@ -29,5 +29,18 @@ class Batch extends Packet
         $this->data = $data;
     }
 
+    public function getId()
+    {
+        return self::ID;
+    }
+
+    public function encode()
+    {
+
+    }
+
+    public function decode()
+    {}
+
 }
 

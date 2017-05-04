@@ -29,5 +29,18 @@ class RemoveNode extends Packet
         $this->hubId = $hubId;
     }
 
+    public function getId()
+    {
+        return self::ID;
+    }
+
+    public function encode()
+    {
+
+    }
+
+    public function decode()
+    {}
+
 }
 

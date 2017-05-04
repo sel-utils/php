@@ -31,5 +31,19 @@ class EntityHeadLook extends Packet
         $this->headYaw = $headYaw;
     }
 
+    public function getId()
+    {
+        return self::ID;
+    }
+
+    public function encode()
+    {
+
+
+    }
+
+    public function decode()
+    {}
+
 }
 

@@ -31,5 +31,19 @@ class LoginSuccess extends Packet
         $this->username = $username;
     }
 
+    public function getId()
+    {
+        return self::ID;
+    }
+
+    public function encode()
+    {
+
+
+    }
+
+    public function decode()
+    {}
+
 }
 

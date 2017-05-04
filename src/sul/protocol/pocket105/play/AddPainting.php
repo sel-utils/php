@@ -37,5 +37,22 @@ class AddPainting extends Packet
         $this->title = $title;
     }
 
+    public function getId()
+    {
+        return self::ID;
+    }
+
+    public function encode()
+    {
+
+
+
+
+
+    }
+
+    public function decode()
+    {}
+
 }
 

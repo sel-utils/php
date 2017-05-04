@@ -37,5 +37,19 @@ class Interact extends Packet
         $this->target = $target;
     }
 
+    public function getId()
+    {
+        return self::ID;
+    }
+
+    public function encode()
+    {
+
+
+    }
+
+    public function decode()
+    {}
+
 }
 

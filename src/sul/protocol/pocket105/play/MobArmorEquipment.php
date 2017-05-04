@@ -31,5 +31,19 @@ class MobArmorEquipment extends Packet
         $this->armor = $armor;
     }
 
+    public function getId()
+    {
+        return self::ID;
+    }
+
+    public function encode()
+    {
+
+
+    }
+
+    public function decode()
+    {}
+
 }
 

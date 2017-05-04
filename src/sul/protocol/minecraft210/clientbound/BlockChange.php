@@ -31,5 +31,19 @@ class BlockChange extends Packet
         $this->block = $block;
     }
 
+    public function getId()
+    {
+        return self::ID;
+    }
+
+    public function encode()
+    {
+
+
+    }
+
+    public function decode()
+    {}
+
 }
 

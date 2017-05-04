@@ -42,5 +42,19 @@ class ConnectionResponse extends Packet
         $this->protocol = $protocol;
     }
 
+    public function getId()
+    {
+        return self::ID;
+    }
+
+    public function encode()
+    {
+
+
+    }
+
+    public function decode()
+    {}
+
 }
 

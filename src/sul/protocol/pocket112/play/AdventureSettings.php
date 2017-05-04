@@ -50,5 +50,19 @@ class AdventureSettings extends Packet
         $this->permissions = $permissions;
     }
 
+    public function getId()
+    {
+        return self::ID;
+    }
+
+    public function encode()
+    {
+
+
+    }
+
+    public function decode()
+    {}
+
 }
 

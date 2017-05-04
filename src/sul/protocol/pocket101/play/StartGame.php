@@ -91,5 +91,37 @@ class StartGame extends Packet
         $this->worldName = $worldName;
     }
 
+    public function getId()
+    {
+        return self::ID;
+    }
+
+    public function encode()
+    {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    }
+
+    public function decode()
+    {}
+
 }
 

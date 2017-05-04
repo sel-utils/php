@@ -29,5 +29,18 @@ class ContainerClose extends Packet
         $this->window = $window;
     }
 
+    public function getId()
+    {
+        return self::ID;
+    }
+
+    public function encode()
+    {
+
+    }
+
+    public function decode()
+    {}
+
 }
 

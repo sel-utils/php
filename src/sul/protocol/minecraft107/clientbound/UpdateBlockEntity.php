@@ -41,5 +41,20 @@ class UpdateBlockEntity extends Packet
         $this->nbt = $nbt;
     }
 
+    public function getId()
+    {
+        return self::ID;
+    }
+
+    public function encode()
+    {
+
+
+
+    }
+
+    public function decode()
+    {}
+
 }
 

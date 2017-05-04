@@ -31,5 +31,19 @@ class UpdateGamemode extends Packet
         $this->gamemode = $gamemode;
     }
 
+    public function getId()
+    {
+        return self::ID;
+    }
+
+    public function encode()
+    {
+
+
+    }
+
+    public function decode()
+    {}
+
 }
 

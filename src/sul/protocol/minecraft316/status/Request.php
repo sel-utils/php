@@ -24,5 +24,18 @@ class Request extends Packet
 
     public function __constructor() {}
 
+    public function getId()
+    {
+        return self::ID;
+    }
+
+    public function encode()
+    {
+
+    }
+
+    public function decode()
+    {}
+
 }
 

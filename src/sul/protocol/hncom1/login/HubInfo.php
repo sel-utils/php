@@ -52,5 +52,28 @@ class HubInfo extends Packet
         $this->additionalJson = $additionalJson;
     }
 
+    public function getId()
+    {
+        return self::ID;
+    }
+
+    public function encode()
+    {
+
+
+
+
+
+
+
+
+
+
+
+    }
+
+    public function decode()
+    {}
+
 }
 

@@ -29,5 +29,18 @@ class Response extends Packet
         $this->json = $json;
     }
 
+    public function getId()
+    {
+        return self::ID;
+    }
+
+    public function encode()
+    {
+
+    }
+
+    public function decode()
+    {}
+
 }
 

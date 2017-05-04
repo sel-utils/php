@@ -29,5 +29,18 @@ class Remove extends Packet
         $this->worldId = $worldId;
     }
 
+    public function getId()
+    {
+        return self::ID;
+    }
+
+    public function encode()
+    {
+
+    }
+
+    public function decode()
+    {}
+
 }
 

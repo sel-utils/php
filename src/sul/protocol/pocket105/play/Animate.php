@@ -35,5 +35,19 @@ class Animate extends Packet
         $this->entityId = $entityId;
     }
 
+    public function getId()
+    {
+        return self::ID;
+    }
+
+    public function encode()
+    {
+
+
+    }
+
+    public function decode()
+    {}
+
 }
 

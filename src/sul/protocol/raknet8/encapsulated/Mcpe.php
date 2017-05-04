@@ -29,5 +29,18 @@ class Mcpe extends Packet
         $this->packet = $packet;
     }
 
+    public function getId()
+    {
+        return self::ID;
+    }
+
+    public function encode()
+    {
+
+    }
+
+    public function decode()
+    {}
+
 }
 

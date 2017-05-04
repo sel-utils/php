@@ -57,5 +57,21 @@ class BlockAction extends Packet
         $this->blockType = $blockType;
     }
 
+    public function getId()
+    {
+        return self::ID;
+    }
+
+    public function encode()
+    {
+
+
+
+
+    }
+
+    public function decode()
+    {}
+
 }
 

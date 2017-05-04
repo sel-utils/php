@@ -39,5 +39,20 @@ class PlayerAbilities extends Packet
         $this->walkingSpeed = $walkingSpeed;
     }
 
+    public function getId()
+    {
+        return self::ID;
+    }
+
+    public function encode()
+    {
+
+
+
+    }
+
+    public function decode()
+    {}
+
 }
 

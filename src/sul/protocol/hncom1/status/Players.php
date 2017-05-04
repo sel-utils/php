@@ -34,5 +34,19 @@ class Players extends Packet
         $this->max = $max;
     }
 
+    public function getId()
+    {
+        return self::ID;
+    }
+
+    public function encode()
+    {
+
+
+    }
+
+    public function decode()
+    {}
+
 }
 

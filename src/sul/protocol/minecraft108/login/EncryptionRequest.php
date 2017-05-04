@@ -33,5 +33,20 @@ class EncryptionRequest extends Packet
         $this->verifyToken = $verifyToken;
     }
 
+    public function getId()
+    {
+        return self::ID;
+    }
+
+    public function encode()
+    {
+
+
+
+    }
+
+    public function decode()
+    {}
+
 }
 

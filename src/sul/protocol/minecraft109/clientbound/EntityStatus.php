@@ -68,5 +68,19 @@ class EntityStatus extends Packet
         $this->status = $status;
     }
 
+    public function getId()
+    {
+        return self::ID;
+    }
+
+    public function encode()
+    {
+
+
+    }
+
+    public function decode()
+    {}
+
 }
 

@@ -29,5 +29,18 @@ class SetCompression extends Packet
         $this->thresold = $thresold;
     }
 
+    public function getId()
+    {
+        return self::ID;
+    }
+
+    public function encode()
+    {
+
+    }
+
+    public function decode()
+    {}
+
 }
 

@@ -31,5 +31,19 @@ class InventoryAction extends Packet
         $this->item = $item;
     }
 
+    public function getId()
+    {
+        return self::ID;
+    }
+
+    public function encode()
+    {
+
+
+    }
+
+    public function decode()
+    {}
+
 }
 

@@ -89,5 +89,24 @@ class Particle extends Packet
         $this->additionalData = $additionalData;
     }
 
+    public function getId()
+    {
+        return self::ID;
+    }
+
+    public function encode()
+    {
+
+
+
+
+
+
+
+    }
+
+    public function decode()
+    {}
+
 }
 

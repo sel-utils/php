@@ -29,5 +29,18 @@ class SetCommandsEnabled extends Packet
         $this->enabled = $enabled;
     }
 
+    public function getId()
+    {
+        return self::ID;
+    }
+
+    public function encode()
+    {
+
+    }
+
+    public function decode()
+    {}
+
 }
 

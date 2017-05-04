@@ -29,5 +29,18 @@ class SetTime extends Packet
         $this->time = $time;
     }
 
+    public function getId()
+    {
+        return self::ID;
+    }
+
+    public function encode()
+    {
+
+    }
+
+    public function decode()
+    {}
+
 }
 

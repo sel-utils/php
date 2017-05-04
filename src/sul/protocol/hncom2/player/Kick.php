@@ -35,5 +35,21 @@ class Kick extends Packet
         $this->parameters = $parameters;
     }
 
+    public function getId()
+    {
+        return self::ID;
+    }
+
+    public function encode()
+    {
+
+
+
+
+    }
+
+    public function decode()
+    {}
+
 }
 

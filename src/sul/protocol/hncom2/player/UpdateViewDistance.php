@@ -31,5 +31,19 @@ class UpdateViewDistance extends Packet
         $this->viewDistance = $viewDistance;
     }
 
+    public function getId()
+    {
+        return self::ID;
+    }
+
+    public function encode()
+    {
+
+
+    }
+
+    public function decode()
+    {}
+
 }
 

@@ -31,5 +31,19 @@ class SteerBoat extends Packet
         $this->leftPaddleTurning = $leftPaddleTurning;
     }
 
+    public function getId()
+    {
+        return self::ID;
+    }
+
+    public function encode()
+    {
+
+
+    }
+
+    public function decode()
+    {}
+
 }
 

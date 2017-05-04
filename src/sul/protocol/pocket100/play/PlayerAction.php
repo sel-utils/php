@@ -50,5 +50,21 @@ class PlayerAction extends Packet
         $this->face = $face;
     }
 
+    public function getId()
+    {
+        return self::ID;
+    }
+
+    public function encode()
+    {
+
+
+
+
+    }
+
+    public function decode()
+    {}
+
 }
 

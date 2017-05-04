@@ -29,5 +29,18 @@ class TabComplete extends Packet
         $this->matches = $matches;
     }
 
+    public function getId()
+    {
+        return self::ID;
+    }
+
+    public function encode()
+    {
+
+    }
+
+    public function decode()
+    {}
+
 }
 

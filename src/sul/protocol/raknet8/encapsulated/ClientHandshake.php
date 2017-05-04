@@ -35,5 +35,21 @@ class ClientHandshake extends Packet
         $this->clientId = $clientId;
     }
 
+    public function getId()
+    {
+        return self::ID;
+    }
+
+    public function encode()
+    {
+
+
+
+
+    }
+
+    public function decode()
+    {}
+
 }
 

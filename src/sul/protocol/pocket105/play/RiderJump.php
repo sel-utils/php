@@ -29,5 +29,18 @@ class RiderJump extends Packet
         $this->rider = $rider;
     }
 
+    public function getId()
+    {
+        return self::ID;
+    }
+
+    public function encode()
+    {
+
+    }
+
+    public function decode()
+    {}
+
 }
 

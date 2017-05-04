@@ -31,5 +31,19 @@ class MessageServerbound extends Packet
         $this->payload = $payload;
     }
 
+    public function getId()
+    {
+        return self::ID;
+    }
+
+    public function encode()
+    {
+
+
+    }
+
+    public function decode()
+    {}
+
 }
 

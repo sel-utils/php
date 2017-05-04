@@ -39,5 +39,23 @@ class UpdateStats extends Packet
         $this->nodes = $nodes;
     }
 
+    public function getId()
+    {
+        return self::ID;
+    }
+
+    public function encode()
+    {
+
+
+
+
+
+
+    }
+
+    public function decode()
+    {}
+
 }
 

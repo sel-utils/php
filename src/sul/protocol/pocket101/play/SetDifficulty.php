@@ -35,5 +35,18 @@ class SetDifficulty extends Packet
         $this->difficulty = $difficulty;
     }
 
+    public function getId()
+    {
+        return self::ID;
+    }
+
+    public function encode()
+    {
+
+    }
+
+    public function decode()
+    {}
+
 }
 

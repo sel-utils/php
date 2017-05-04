@@ -31,5 +31,19 @@ class SetCooldown extends Packet
         $this->cooldown = $cooldown;
     }
 
+    public function getId()
+    {
+        return self::ID;
+    }
+
+    public function encode()
+    {
+
+
+    }
+
+    public function decode()
+    {}
+
 }
 

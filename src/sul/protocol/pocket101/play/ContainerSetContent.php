@@ -33,5 +33,20 @@ class ContainerSetContent extends Packet
         $this->hotbar = $hotbar;
     }
 
+    public function getId()
+    {
+        return self::ID;
+    }
+
+    public function encode()
+    {
+
+
+
+    }
+
+    public function decode()
+    {}
+
 }
 

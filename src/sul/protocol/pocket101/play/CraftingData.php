@@ -29,5 +29,18 @@ class CraftingData extends Packet
         $this->recipes = $recipes;
     }
 
+    public function getId()
+    {
+        return self::ID;
+    }
+
+    public function encode()
+    {
+
+    }
+
+    public function decode()
+    {}
+
 }
 

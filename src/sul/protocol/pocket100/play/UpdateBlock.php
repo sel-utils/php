@@ -39,5 +39,20 @@ class UpdateBlock extends Packet
         $this->flagsAndMeta = $flagsAndMeta;
     }
 
+    public function getId()
+    {
+        return self::ID;
+    }
+
+    public function encode()
+    {
+
+
+
+    }
+
+    public function decode()
+    {}
+
 }
 

@@ -29,5 +29,18 @@ class GameRulesChanged extends Packet
         $this->rules = $rules;
     }
 
+    public function getId()
+    {
+        return self::ID;
+    }
+
+    public function encode()
+    {
+
+    }
+
+    public function decode()
+    {}
+
 }
 

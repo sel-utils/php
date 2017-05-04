@@ -31,5 +31,19 @@ class ResourcePackChunkRequest extends Packet
         $this->chunkIndex = $chunkIndex;
     }
 
+    public function getId()
+    {
+        return self::ID;
+    }
+
+    public function encode()
+    {
+
+
+    }
+
+    public function decode()
+    {}
+
 }
 

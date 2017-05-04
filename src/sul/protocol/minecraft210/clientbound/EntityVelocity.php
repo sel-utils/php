@@ -31,5 +31,19 @@ class EntityVelocity extends Packet
         $this->velocity = $velocity;
     }
 
+    public function getId()
+    {
+        return self::ID;
+    }
+
+    public function encode()
+    {
+
+
+    }
+
+    public function decode()
+    {}
+
 }
 

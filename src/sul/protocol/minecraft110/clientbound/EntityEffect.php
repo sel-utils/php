@@ -37,5 +37,22 @@ class EntityEffect extends Packet
         $this->showParticles = $showParticles;
     }
 
+    public function getId()
+    {
+        return self::ID;
+    }
+
+    public function encode()
+    {
+
+
+
+
+
+    }
+
+    public function decode()
+    {}
+
 }
 

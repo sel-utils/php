@@ -29,5 +29,18 @@ class Player extends Packet
         $this->onGround = $onGround;
     }
 
+    public function getId()
+    {
+        return self::ID;
+    }
+
+    public function encode()
+    {
+
+    }
+
+    public function decode()
+    {}
+
 }
 

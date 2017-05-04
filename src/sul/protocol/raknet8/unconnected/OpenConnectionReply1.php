@@ -35,5 +35,21 @@ class OpenConnectionReply1 extends Packet
         $this->mtuLength = $mtuLength;
     }
 
+    public function getId()
+    {
+        return self::ID;
+    }
+
+    public function encode()
+    {
+
+
+
+
+    }
+
+    public function decode()
+    {}
+
 }
 

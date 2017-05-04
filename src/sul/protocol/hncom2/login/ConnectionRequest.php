@@ -35,5 +35,21 @@ class ConnectionRequest extends Packet
         $this->main = $main;
     }
 
+    public function getId()
+    {
+        return self::ID;
+    }
+
+    public function encode()
+    {
+
+
+
+
+    }
+
+    public function decode()
+    {}
+
 }
 

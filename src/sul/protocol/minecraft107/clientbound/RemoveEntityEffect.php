@@ -31,5 +31,19 @@ class RemoveEntityEffect extends Packet
         $this->effectId = $effectId;
     }
 
+    public function getId()
+    {
+        return self::ID;
+    }
+
+    public function encode()
+    {
+
+
+    }
+
+    public function decode()
+    {}
+
 }
 

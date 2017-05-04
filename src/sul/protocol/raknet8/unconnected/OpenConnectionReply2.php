@@ -37,5 +37,22 @@ class OpenConnectionReply2 extends Packet
         $this->security = $security;
     }
 
+    public function getId()
+    {
+        return self::ID;
+    }
+
+    public function encode()
+    {
+
+
+
+
+
+    }
+
+    public function decode()
+    {}
+
 }
 

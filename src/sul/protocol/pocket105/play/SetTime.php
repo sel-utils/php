@@ -31,5 +31,19 @@ class SetTime extends Packet
         $this->daylightCycle = $daylightCycle;
     }
 
+    public function getId()
+    {
+        return self::ID;
+    }
+
+    public function encode()
+    {
+
+
+    }
+
+    public function decode()
+    {}
+
 }
 

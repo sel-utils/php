@@ -31,5 +31,19 @@ class UpdateLatency extends Packet
         $this->latency = $latency;
     }
 
+    public function getId()
+    {
+        return self::ID;
+    }
+
+    public function encode()
+    {
+
+
+    }
+
+    public function decode()
+    {}
+
 }
 

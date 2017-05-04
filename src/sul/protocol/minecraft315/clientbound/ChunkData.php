@@ -39,5 +39,23 @@ class ChunkData extends Packet
         $this->tiles = $tiles;
     }
 
+    public function getId()
+    {
+        return self::ID;
+    }
+
+    public function encode()
+    {
+
+
+
+
+
+
+    }
+
+    public function decode()
+    {}
+
 }
 

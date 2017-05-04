@@ -31,5 +31,19 @@ class Transfer extends Packet
         $this->port = $port;
     }
 
+    public function getId()
+    {
+        return self::ID;
+    }
+
+    public function encode()
+    {
+
+
+    }
+
+    public function decode()
+    {}
+
 }
 

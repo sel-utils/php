@@ -47,5 +47,27 @@ class CommandBlockUpdate extends Packet
         $this->trackOutput = $trackOutput;
     }
 
+    public function getId()
+    {
+        return self::ID;
+    }
+
+    public function encode()
+    {
+
+
+
+
+
+
+
+
+
+
+    }
+
+    public function decode()
+    {}
+
 }
 

@@ -37,5 +37,20 @@ class SteerVehicle extends Packet
         $this->flags = $flags;
     }
 
+    public function getId()
+    {
+        return self::ID;
+    }
+
+    public function encode()
+    {
+
+
+
+    }
+
+    public function decode()
+    {}
+
 }
 

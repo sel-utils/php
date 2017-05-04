@@ -37,5 +37,22 @@ class ServerHandshake extends Packet
         $this->serverId = $serverId;
     }
 
+    public function getId()
+    {
+        return self::ID;
+    }
+
+    public function encode()
+    {
+
+
+
+
+
+    }
+
+    public function decode()
+    {}
+
 }
 

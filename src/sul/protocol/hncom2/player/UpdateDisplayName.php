@@ -31,5 +31,19 @@ class UpdateDisplayName extends Packet
         $this->displayName = $displayName;
     }
 
+    public function getId()
+    {
+        return self::ID;
+    }
+
+    public function encode()
+    {
+
+
+    }
+
+    public function decode()
+    {}
+
 }
 

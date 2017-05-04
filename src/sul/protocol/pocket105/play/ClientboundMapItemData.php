@@ -46,5 +46,24 @@ class ClientboundMapItemData extends Packet
         $this->decorations = $decorations;
     }
 
+    public function getId()
+    {
+        return self::ID;
+    }
+
+    public function encode()
+    {
+
+
+
+
+
+
+
+    }
+
+    public function decode()
+    {}
+
 }
 

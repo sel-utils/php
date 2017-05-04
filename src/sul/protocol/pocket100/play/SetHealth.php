@@ -29,5 +29,18 @@ class SetHealth extends Packet
         $this->health = $health;
     }
 
+    public function getId()
+    {
+        return self::ID;
+    }
+
+    public function encode()
+    {
+
+    }
+
+    public function decode()
+    {}
+
 }
 

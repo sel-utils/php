@@ -29,5 +29,18 @@ class TeleportConfirm extends Packet
         $this->teleportId = $teleportId;
     }
 
+    public function getId()
+    {
+        return self::ID;
+    }
+
+    public function encode()
+    {
+
+    }
+
+    public function decode()
+    {}
+
 }
 

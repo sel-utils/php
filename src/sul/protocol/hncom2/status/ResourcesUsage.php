@@ -33,5 +33,20 @@ class ResourcesUsage extends Packet
         $this->cpu = $cpu;
     }
 
+    public function getId()
+    {
+        return self::ID;
+    }
+
+    public function encode()
+    {
+
+
+
+    }
+
+    public function decode()
+    {}
+
 }
 

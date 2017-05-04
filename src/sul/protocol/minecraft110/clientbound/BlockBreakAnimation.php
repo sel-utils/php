@@ -33,5 +33,20 @@ class BlockBreakAnimation extends Packet
         $this->stage = $stage;
     }
 
+    public function getId()
+    {
+        return self::ID;
+    }
+
+    public function encode()
+    {
+
+
+
+    }
+
+    public function decode()
+    {}
+
 }
 

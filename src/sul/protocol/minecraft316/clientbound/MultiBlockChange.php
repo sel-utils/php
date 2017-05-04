@@ -31,5 +31,19 @@ class MultiBlockChange extends Packet
         $this->changes = $changes;
     }
 
+    public function getId()
+    {
+        return self::ID;
+    }
+
+    public function encode()
+    {
+
+
+    }
+
+    public function decode()
+    {}
+
 }
 

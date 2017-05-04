@@ -29,5 +29,18 @@ class Statistics extends Packet
         $this->statistics = $statistics;
     }
 
+    public function getId()
+    {
+        return self::ID;
+    }
+
+    public function encode()
+    {
+
+    }
+
+    public function decode()
+    {}
+
 }
 

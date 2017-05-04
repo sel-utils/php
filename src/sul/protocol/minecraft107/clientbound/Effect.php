@@ -62,5 +62,21 @@ class Effect extends Packet
         $this->disableVolume = $disableVolume;
     }
 
+    public function getId()
+    {
+        return self::ID;
+    }
+
+    public function encode()
+    {
+
+
+
+
+    }
+
+    public function decode()
+    {}
+
 }
 

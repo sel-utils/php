@@ -33,5 +33,20 @@ class OpenConnectionRequest1 extends Packet
         $this->mtu = $mtu;
     }
 
+    public function getId()
+    {
+        return self::ID;
+    }
+
+    public function encode()
+    {
+
+
+
+    }
+
+    public function decode()
+    {}
+
 }
 

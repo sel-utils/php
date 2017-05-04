@@ -37,5 +37,22 @@ class ResourcePackDataInfo extends Packet
         $this->sha256 = $sha256;
     }
 
+    public function getId()
+    {
+        return self::ID;
+    }
+
+    public function encode()
+    {
+
+
+
+
+
+    }
+
+    public function decode()
+    {}
+
 }
 

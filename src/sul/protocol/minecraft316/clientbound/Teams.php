@@ -31,5 +31,19 @@ class Teams extends Packet
         $this->mode = $mode;
     }
 
+    public function getId()
+    {
+        return self::ID;
+    }
+
+    public function encode()
+    {
+
+
+    }
+
+    public function decode()
+    {}
+
 }
 

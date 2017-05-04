@@ -44,5 +44,20 @@ class EntityAction extends Packet
         $this->jumpBoost = $jumpBoost;
     }
 
+    public function getId()
+    {
+        return self::ID;
+    }
+
+    public function encode()
+    {
+
+
+
+    }
+
+    public function decode()
+    {}
+
 }
 

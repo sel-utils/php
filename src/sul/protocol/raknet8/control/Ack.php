@@ -29,5 +29,18 @@ class Ack extends Packet
         $this->packets = $packets;
     }
 
+    public function getId()
+    {
+        return self::ID;
+    }
+
+    public function encode()
+    {
+
+    }
+
+    public function decode()
+    {}
+
 }
 

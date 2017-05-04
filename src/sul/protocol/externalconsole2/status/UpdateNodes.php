@@ -35,5 +35,19 @@ class UpdateNodes extends Packet
         $this->node = $node;
     }
 
+    public function getId()
+    {
+        return self::ID;
+    }
+
+    public function encode()
+    {
+
+
+    }
+
+    public function decode()
+    {}
+
 }
 
