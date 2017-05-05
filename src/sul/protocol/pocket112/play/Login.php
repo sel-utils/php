@@ -26,16 +26,14 @@ class Login extends Packet
 
     public $protocol = 112;
     public $version;
-    public $bodyLength;
     public $body;
 
     public function __constructor() {}
 
-    public function __constructor($protocol, $version, $bodyLength, \sul\protocol\pocket112\types\LoginBody $body)
+    public function __constructor($protocol, $version, \sul\protocol\pocket112\types\LoginBody $body)
     {
         $this->protocol = $protocol;
         $this->version = $version;
-        $this->bodyLength = $bodyLength;
         $this->body = $body;
     }
 
@@ -46,7 +44,6 @@ class Login extends Packet
 
     public function encode()
     {
-
 
 
 
