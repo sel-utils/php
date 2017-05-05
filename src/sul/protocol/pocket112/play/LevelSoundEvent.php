@@ -115,8 +115,10 @@ class LevelSoundEvent extends Packet
     public const HAGGLE_YES = 91;
     public const HAGGLE_NO = 92;
     public const HAGGLE_IDLE = 93;
-    public const DEFAULT = 94;
-    public const UNDEFINED = 95;
+    public const CHORUS_GROW = 94;
+    public const CHORUS_DEATH = 95;
+    public const DEFAULT = 96;
+    public const UNDEFINED = 97;
 
     public $sound;
     public $position;

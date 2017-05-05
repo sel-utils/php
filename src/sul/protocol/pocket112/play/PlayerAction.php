@@ -34,6 +34,7 @@ class PlayerAction extends Packet
     public const STOP_SNEAK = 12;
     public const START_GLIDING = 15;
     public const STOP_GLIDING = 16;
+    public const CONTINUE_BREAK = 18;
 
     public $entityId;
     public $action;
