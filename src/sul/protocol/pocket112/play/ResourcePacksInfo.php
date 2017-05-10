@@ -26,7 +26,7 @@ class ResourcePacksInfo extends Packet
 
     public function __constructor() {}
 
-    public function __constructor($mustAccept, $behaviourPacks, $resourcePacks)
+    public function __constructor($mustAccept, \sul\protocol\pocket112\types\PackWithSizeArray $behaviourPacks, \sul\protocol\pocket112\types\PackWithSizeArray $resourcePacks)
     {
         $this->mustAccept = $mustAccept;
         $this->behaviourPacks = $behaviourPacks;
