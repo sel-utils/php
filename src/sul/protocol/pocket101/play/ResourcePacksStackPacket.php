@@ -26,7 +26,7 @@ class ResourcePacksStackPacket extends Packet
 
     public function __constructor() {}
 
-    public function __constructor($mustAccept, \sul\protocol\pocket101\types\PackArray $behaviourPacks, \sul\protocol\pocket101\types\PackArray $resourcePacks)
+    public function __constructor($mustAccept, \sul\protocol\pocket101\types\Pack[] $behaviourPacks, \sul\protocol\pocket101\types\Pack[] $resourcePacks)
     {
         $this->mustAccept = $mustAccept;
         $this->behaviourPacks = $behaviourPacks;

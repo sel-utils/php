@@ -38,15 +38,15 @@ class EntityEvent extends Packet
 
     public $entityId;
     public $eventId;
-    public $?;
+    public $unknown2;
 
     public function __constructor() {}
 
-    public function __constructor($entityId, $eventId, $?)
+    public function __constructor($entityId, $eventId, $unknown2)
     {
         $this->entityId = $entityId;
         $this->eventId = $eventId;
-        $this->? = $?;
+        $this->unknown2 = $unknown2;
     }
 
     public function getId()

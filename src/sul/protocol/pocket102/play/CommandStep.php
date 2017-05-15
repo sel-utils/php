@@ -22,7 +22,7 @@ class CommandStep extends Packet
 
     public $command;
     public $overload;
-    public $?;
+    public $unknown2;
     public $currentStep;
     public $done;
     public $clientId;
@@ -31,11 +31,11 @@ class CommandStep extends Packet
 
     public function __constructor() {}
 
-    public function __constructor($command, $overload, $?, $currentStep, $done, $clientId, $input, $output)
+    public function __constructor($command, $overload, $unknown2, $currentStep, $done, $clientId, $input, $output)
     {
         $this->command = $command;
         $this->overload = $overload;
-        $this->? = $?;
+        $this->unknown2 = $unknown2;
         $this->currentStep = $currentStep;
         $this->done = $done;
         $this->clientId = $clientId;

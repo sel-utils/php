@@ -24,7 +24,7 @@ class GameRulesChanged extends Packet
 
     public function __constructor() {}
 
-    public function __constructor(\sul\protocol\pocket112\types\Rules $rules)
+    public function __constructor(\sul\protocol\pocket112\types\Rule[] $rules)
     {
         $this->rules = $rules;
     }

@@ -27,15 +27,15 @@ class ChangeDimension extends Packet
 
     public $dimension;
     public $position;
-    public $?;
+    public $unknown2;
 
     public function __constructor() {}
 
-    public function __constructor($dimension, $position, $?)
+    public function __constructor($dimension, $position, $unknown2)
     {
         $this->dimension = $dimension;
         $this->position = $position;
-        $this->? = $?;
+        $this->unknown2 = $unknown2;
     }
 
     public function getId()

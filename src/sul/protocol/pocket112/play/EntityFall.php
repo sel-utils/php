@@ -22,15 +22,15 @@ class EntityFall extends Packet
 
     public $entityId;
     public $distance;
-    public $?;
+    public $unknown2;
 
     public function __constructor() {}
 
-    public function __constructor($entityId, $distance, $?)
+    public function __constructor($entityId, $distance, $unknown2)
     {
         $this->entityId = $entityId;
         $this->distance = $distance;
-        $this->? = $?;
+        $this->unknown2 = $unknown2;
     }
 
     public function getId()

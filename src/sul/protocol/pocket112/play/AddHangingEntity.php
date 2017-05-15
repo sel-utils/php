@@ -23,16 +23,16 @@ class AddHangingEntity extends Packet
     public $entityId;
     public $runtimeId;
     public $position;
-    public $?;
+    public $unknown3;
 
     public function __constructor() {}
 
-    public function __constructor($entityId, $runtimeId, \sul\protocol\pocket112\types\BlockPosition $position, $?)
+    public function __constructor($entityId, $runtimeId, \sul\protocol\pocket112\types\BlockPosition $position, $unknown3)
     {
         $this->entityId = $entityId;
         $this->runtimeId = $runtimeId;
         $this->position = $position;
-        $this->? = $?;
+        $this->unknown3 = $unknown3;
     }
 
     public function getId()

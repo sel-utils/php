@@ -21,14 +21,14 @@ class AvailableCommands extends Packet
     public const SERVERBOUND = false;
 
     public $commands;
-    public $?;
+    public $unknown1;
 
     public function __constructor() {}
 
-    public function __constructor($commands, $?)
+    public function __constructor($commands, $unknown1)
     {
         $this->commands = $commands;
-        $this->? = $?;
+        $this->unknown1 = $unknown1;
     }
 
     public function getId()

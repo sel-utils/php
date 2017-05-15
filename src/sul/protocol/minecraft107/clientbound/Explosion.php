@@ -27,7 +27,7 @@ class Explosion extends Packet
 
     public function __constructor() {}
 
-    public function __constructor($position, $radius, \sul\protocol\minecraft107\types\ExplosionRecords $records, $motion)
+    public function __constructor($position, $radius, Tuple!(byte, x, byte, y, byte, z)[] $records, $motion)
     {
         $this->position = $position;
         $this->radius = $radius;

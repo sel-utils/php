@@ -25,7 +25,7 @@ class EntityProperties extends Packet
 
     public function __constructor() {}
 
-    public function __constructor($entityId, \sul\protocol\minecraft107\types\Attributes $attributes)
+    public function __constructor($entityId, \sul\protocol\minecraft107\types\Attribute[] $attributes)
     {
         $this->entityId = $entityId;
         $this->attributes = $attributes;

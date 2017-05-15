@@ -118,17 +118,17 @@ class LevelSoundEvent extends Packet
     public $position;
     public $volume;
     public $pitch;
-    public $?;
+    public $unknown4;
 
     public function __constructor() {}
 
-    public function __constructor($sound, $position, $volume, $pitch, $?)
+    public function __constructor($sound, $position, $volume, $pitch, $unknown4)
     {
         $this->sound = $sound;
         $this->position = $position;
         $this->volume = $volume;
         $this->pitch = $pitch;
-        $this->? = $?;
+        $this->unknown4 = $unknown4;
     }
 
     public function getId()

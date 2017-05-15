@@ -22,17 +22,17 @@ class InventoryAction extends Packet
 
     public $action;
     public $item;
-    public $?;
-    public $?;
+    public $unknown2;
+    public $unknown3;
 
     public function __constructor() {}
 
-    public function __constructor($action, \sul\protocol\pocket112\types\Slot $item, $?, $?)
+    public function __constructor($action, \sul\protocol\pocket112\types\Slot $item, $unknown2, $unknown3)
     {
         $this->action = $action;
         $this->item = $item;
-        $this->? = $?;
-        $this->? = $?;
+        $this->unknown2 = $unknown2;
+        $this->unknown3 = $unknown3;
     }
 
     public function getId()

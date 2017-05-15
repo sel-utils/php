@@ -20,15 +20,15 @@ class StopSound extends Packet
     public const CLIENTBOUND = true;
     public const SERVERBOUND = false;
 
-    public $?;
-    public $?;
+    public $unknown0;
+    public $unknown1;
 
     public function __constructor() {}
 
-    public function __constructor($?, $?)
+    public function __constructor($unknown0, $unknown1)
     {
-        $this->? = $?;
-        $this->? = $?;
+        $this->unknown0 = $unknown0;
+        $this->unknown1 = $unknown1;
     }
 
     public function getId()

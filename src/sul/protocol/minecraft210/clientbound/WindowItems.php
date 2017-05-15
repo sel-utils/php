@@ -25,7 +25,7 @@ class WindowItems extends Packet
 
     public function __constructor() {}
 
-    public function __constructor($window, \sul\protocol\minecraft210\types\Slots $slots)
+    public function __constructor($window, \sul\protocol\minecraft210\types\Slot[] $slots)
     {
         $this->window = $window;
         $this->slots = $slots;

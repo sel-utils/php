@@ -20,13 +20,13 @@ class HurtArmor extends Packet
     public const CLIENTBOUND = true;
     public const SERVERBOUND = false;
 
-    public $?;
+    public $unknown0;
 
     public function __constructor() {}
 
-    public function __constructor($?)
+    public function __constructor($unknown0)
     {
-        $this->? = $?;
+        $this->unknown0 = $unknown0;
     }
 
     public function getId()

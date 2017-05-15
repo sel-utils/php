@@ -24,17 +24,17 @@ class MobEquipment extends Packet
     public $item;
     public $inventorySlot;
     public $hotbarSlot;
-    public $?;
+    public $unknown4;
 
     public function __constructor() {}
 
-    public function __constructor($entityId, \sul\protocol\pocket101\types\Slot $item, $inventorySlot, $hotbarSlot, $?)
+    public function __constructor($entityId, \sul\protocol\pocket101\types\Slot $item, $inventorySlot, $hotbarSlot, $unknown4)
     {
         $this->entityId = $entityId;
         $this->item = $item;
         $this->inventorySlot = $inventorySlot;
         $this->hotbarSlot = $hotbarSlot;
-        $this->? = $?;
+        $this->unknown4 = $unknown4;
     }
 
     public function getId()

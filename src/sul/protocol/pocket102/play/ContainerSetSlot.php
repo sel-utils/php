@@ -24,17 +24,17 @@ class ContainerSetSlot extends Packet
     public $slot;
     public $hotbarSlot;
     public $item;
-    public $?;
+    public $unknown4;
 
     public function __constructor() {}
 
-    public function __constructor($window, $slot, $hotbarSlot, \sul\protocol\pocket102\types\Slot $item, $?)
+    public function __constructor($window, $slot, $hotbarSlot, \sul\protocol\pocket102\types\Slot $item, $unknown4)
     {
         $this->window = $window;
         $this->slot = $slot;
         $this->hotbarSlot = $hotbarSlot;
         $this->item = $item;
-        $this->? = $?;
+        $this->unknown4 = $unknown4;
     }
 
     public function getId()

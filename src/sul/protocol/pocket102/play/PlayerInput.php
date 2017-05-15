@@ -22,15 +22,15 @@ class PlayerInput extends Packet
 
     public $motion;
     public $flags;
-    public $?;
+    public $unknown2;
 
     public function __constructor() {}
 
-    public function __constructor($motion, $flags, $?)
+    public function __constructor($motion, $flags, $unknown2)
     {
         $this->motion = $motion;
         $this->flags = $flags;
-        $this->? = $?;
+        $this->unknown2 = $unknown2;
     }
 
     public function getId()

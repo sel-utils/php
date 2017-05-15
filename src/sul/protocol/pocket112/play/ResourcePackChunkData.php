@@ -27,7 +27,7 @@ class ResourcePackChunkData extends Packet
 
     public function __constructor() {}
 
-    public function __constructor($id, $chunkIndex, $progress, \sul\protocol\pocket112\types\UintLeBytes $data)
+    public function __constructor($id, $chunkIndex, $progress, ubyte[] $data)
     {
         $this->id = $id;
         $this->chunkIndex = $chunkIndex;
