@@ -20,19 +20,19 @@ class PlaySound extends Packet
     public const CLIENTBOUND = true;
     public const SERVERBOUND = false;
 
-    public $unknown0;
+    public $name;
     public $position;
-    public $unknown2;
-    public $unknown3;
+    public $volume;
+    public $pitch;
 
     public function __constructor() {}
 
-    public function __constructor($unknown0, \sul\protocol\pocket112\types\BlockPosition $position, $unknown2, $unknown3)
+    public function __constructor($name, \sul\protocol\pocket112\types\BlockPosition $position, $volume, $pitch)
     {
-        $this->unknown0 = $unknown0;
+        $this->name = $name;
         $this->position = $position;
-        $this->unknown2 = $unknown2;
-        $this->unknown3 = $unknown3;
+        $this->volume = $volume;
+        $this->pitch = $pitch;
     }
 
     public function getId()
