@@ -20,17 +20,21 @@ class SetSpawnPosition extends Packet
     public const CLIENTBOUND = true;
     public const SERVERBOUND = false;
 
-    public $unknown0;
+    // type
+    public const PLAYER_SPAWN = 0;
+    public const WORLD_SPAWN = 1;
+
+    public $type;
     public $position;
-    public $unknown2;
+    public $forced;
 
     public function __constructor() {}
 
-    public function __constructor($unknown0, \sul\protocol\pocket112\types\BlockPosition $position, $unknown2)
+    public function __constructor($type, \sul\protocol\pocket112\types\BlockPosition $position, $forced)
     {
-        $this->unknown0 = $unknown0;
+        $this->type = $type;
         $this->position = $position;
-        $this->unknown2 = $unknown2;
+        $this->forced = $forced;
     }
 
     public function getId()
