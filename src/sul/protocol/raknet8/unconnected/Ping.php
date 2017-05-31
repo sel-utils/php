@@ -22,13 +22,15 @@ class Ping extends Packet
 
     public $pingId;
     public $magic;
+    public $guid;
 
     public function __constructor() {}
 
-    public function __constructor($pingId, $magic)
+    public function __constructor($pingId, $magic, $guid)
     {
         $this->pingId = $pingId;
         $this->magic = $magic;
+        $this->guid = $guid;
     }
 
     public function getId()
@@ -38,6 +40,7 @@ class Ping extends Packet
 
     public function encode()
     {
+
 
 
     }
