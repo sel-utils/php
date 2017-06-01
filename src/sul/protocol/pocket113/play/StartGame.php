@@ -68,10 +68,12 @@ class StartGame extends Packet
     public $levelId;
     public $worldName;
     public $premiumWorldTemplate;
+    public $unknown23;
+    public $worldTicks;
 
     public function __constructor() {}
 
-    public function __constructor($entityId, $runtimeId, $gamemode, $position, $yaw, $pitch, $seed, $dimension, $generator, $worldGamemode, $difficulty, $spawnPosition, $loadedInCreative, $time, $version, $rainLevel, $lightingLevel, $commandsEnabled, $textureRequired, $gameRules, $levelId, $worldName, $premiumWorldTemplate)
+    public function __constructor($entityId, $runtimeId, $gamemode, $position, $yaw, $pitch, $seed, $dimension, $generator, $worldGamemode, $difficulty, $spawnPosition, $loadedInCreative, $time, $version, $rainLevel, $lightingLevel, $commandsEnabled, $textureRequired, $gameRules, $levelId, $worldName, $premiumWorldTemplate, $unknown23, $worldTicks)
     {
         $this->entityId = $entityId;
         $this->runtimeId = $runtimeId;
@@ -96,6 +98,8 @@ class StartGame extends Packet
         $this->levelId = $levelId;
         $this->worldName = $worldName;
         $this->premiumWorldTemplate = $premiumWorldTemplate;
+        $this->unknown23 = $unknown23;
+        $this->worldTicks = $worldTicks;
     }
 
     public function getId()
@@ -105,6 +109,8 @@ class StartGame extends Packet
 
     public function encode()
     {
+
+
 
 
 

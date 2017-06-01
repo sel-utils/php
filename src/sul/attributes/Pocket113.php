@@ -6,11 +6,11 @@
  * 
  * License: https://github.com/sel-project/sel-utils/blob/master/LICENSE
  * Repository: https://github.com/sel-project/sel-utils
- * Generated from https://github.com/sel-project/sel-utils/blob/master/xml/attributes/pocket112.xml
+ * Generated from https://github.com/sel-project/sel-utils/blob/master/xml/attributes/pocket113.xml
  */
 namespace sul\attributes;
 
-class Pocket112
+class Pocket113
 {
 
     const HEALTH = ["id" => "minecraft:health", "min" => 0, "max" => 20, "default" => 20];
