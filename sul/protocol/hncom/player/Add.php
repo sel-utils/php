@@ -8,7 +8,7 @@
  * Repository: https://github.com/sel-project/sel-utils
  * Generated from https://github.com/sel-project/sel-utils/blob/master/xml/protocol/hncom2.xml
  */
-namespace sul\protocol\player\hncom2;
+namespace sul\protocol\player\hncom;
 
 use utils\Packet;
 
@@ -55,7 +55,7 @@ class Add extends Packet
 
     public function __constructor() {}
 
-    public function __constructor($hubId, $reason, $type, $protocol, $version, $username, $displayName, $dimension, $viewDistance, \sul\protocol\hncom2\types\Address $clientAddress, $serverAddress, $serverPort, $uuid, \sul\protocol\hncom2\types\Skin $skin, $language, $inputMode, $latency)
+    public function __constructor($hubId, $reason, $type, $protocol, $version, $username, $displayName, $dimension, $viewDistance, \sul\protocol\hncom\types\Address $clientAddress, $serverAddress, $serverPort, $uuid, \sul\protocol\hncom\types\Skin $skin, $language, $inputMode, $latency)
     {
         $this->hubId = $hubId;
         $this->reason = $reason;

@@ -8,7 +8,7 @@
  * Repository: https://github.com/sel-project/sel-utils
  * Generated from https://github.com/sel-project/sel-utils/blob/master/xml/protocol/hncom2.xml
  */
-namespace sul\protocol\player\hncom2;
+namespace sul\protocol\player\hncom;
 
 use utils\Packet;
 

@@ -8,7 +8,7 @@
  * Repository: https://github.com/sel-project/sel-utils
  * Generated from https://github.com/sel-project/sel-utils/blob/master/xml/protocol/hncom2.xml
  */
-namespace sul\protocol\status\hncom2;
+namespace sul\protocol\status\hncom;
 
 use utils\Packet;
 
@@ -32,7 +32,7 @@ class RemoteCommand extends Packet
 
     public function __constructor() {}
 
-    public function __constructor($origin, \sul\protocol\hncom2\types\Address $sender, $command, $commandId)
+    public function __constructor($origin, \sul\protocol\hncom\types\Address $sender, $command, $commandId)
     {
         $this->origin = $origin;
         $this->sender = $sender;
