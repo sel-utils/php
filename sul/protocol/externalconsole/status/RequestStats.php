@@ -8,7 +8,7 @@
  * Repository: https://github.com/sel-project/sel-utils
  * Generated from https://github.com/sel-project/sel-utils/blob/master/xml/protocol/externalconsole2.xml
  */
-namespace sul\protocol\status\externalconsole2;
+namespace sul\protocol\status\externalconsole;
 
 use utils\Packet;
 
