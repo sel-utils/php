@@ -10,7 +10,7 @@
  */
 namespace sul\attributes;
 
-class Minecraft316
+class Minecraft
 {
 
     const MAX_HEALTH = ["id" => "generic.maxHealth", "min" => 0, "max" => 1024, "default" => 20];

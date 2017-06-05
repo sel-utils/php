@@ -8,7 +8,7 @@
  * Repository: https://github.com/sel-project/sel-utils
  * Generated from https://github.com/sel-project/sel-utils/blob/master/xml/protocol/minecraft316.xml
  */
-namespace sul\protocol\serverbound\minecraft316;
+namespace sul\protocol\serverbound\minecraft;
 
 use utils\Packet;
 
@@ -25,7 +25,7 @@ class CreativeInventoryAction extends Packet
 
     public function __constructor() {}
 
-    public function __constructor($slot, \sul\protocol\minecraft316\types\Slot $clickedItem)
+    public function __constructor($slot, \sul\protocol\minecraft\types\Slot $clickedItem)
     {
         $this->slot = $slot;
         $this->clickedItem = $clickedItem;

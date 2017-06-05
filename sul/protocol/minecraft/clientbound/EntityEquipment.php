@@ -8,7 +8,7 @@
  * Repository: https://github.com/sel-project/sel-utils
  * Generated from https://github.com/sel-project/sel-utils/blob/master/xml/protocol/minecraft316.xml
  */
-namespace sul\protocol\clientbound\minecraft316;
+namespace sul\protocol\clientbound\minecraft;
 
 use utils\Packet;
 
@@ -26,7 +26,7 @@ class EntityEquipment extends Packet
 
     public function __constructor() {}
 
-    public function __constructor($entityId, $slot, \sul\protocol\minecraft316\types\Slot $item)
+    public function __constructor($entityId, $slot, \sul\protocol\minecraft\types\Slot $item)
     {
         $this->entityId = $entityId;
         $this->slot = $slot;

@@ -8,7 +8,7 @@
  * Repository: https://github.com/sel-project/sel-utils
  * Generated from https://github.com/sel-project/sel-utils/blob/master/xml/protocol/minecraft316.xml
  */
-namespace sul\protocol\login\minecraft316;
+namespace sul\protocol\login\minecraft;
 
 use utils\Packet;
 

@@ -8,7 +8,7 @@
  * Repository: https://github.com/sel-project/sel-utils
  * Generated from https://github.com/sel-project/sel-utils/blob/master/xml/protocol/minecraft316.xml
  */
-namespace sul\protocol\clientbound\minecraft316;
+namespace sul\protocol\clientbound\minecraft;
 
 use utils\Packet;
 
@@ -25,7 +25,7 @@ class EntityProperties extends Packet
 
     public function __constructor() {}
 
-    public function __constructor($entityId, \sul\protocol\minecraft316\types\Attribute[] $attributes)
+    public function __constructor($entityId, \sul\protocol\minecraft\types\Attribute[] $attributes)
     {
         $this->entityId = $entityId;
         $this->attributes = $attributes;

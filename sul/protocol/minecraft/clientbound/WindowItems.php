@@ -8,7 +8,7 @@
  * Repository: https://github.com/sel-project/sel-utils
  * Generated from https://github.com/sel-project/sel-utils/blob/master/xml/protocol/minecraft316.xml
  */
-namespace sul\protocol\clientbound\minecraft316;
+namespace sul\protocol\clientbound\minecraft;
 
 use utils\Packet;
 
@@ -25,7 +25,7 @@ class WindowItems extends Packet
 
     public function __constructor() {}
 
-    public function __constructor($window, \sul\protocol\minecraft316\types\Slot[] $slots)
+    public function __constructor($window, \sul\protocol\minecraft\types\Slot[] $slots)
     {
         $this->window = $window;
         $this->slots = $slots;

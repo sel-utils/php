@@ -8,7 +8,7 @@
  * Repository: https://github.com/sel-project/sel-utils
  * Generated from https://github.com/sel-project/sel-utils/blob/master/xml/protocol/minecraft316.xml
  */
-namespace sul\protocol\clientbound\minecraft316;
+namespace sul\protocol\clientbound\minecraft;
 
 use utils\Packet;
 
@@ -32,7 +32,7 @@ class SpawnMob extends Packet
 
     public function __constructor() {}
 
-    public function __constructor($entityId, $uuid, $type, $position, $yaw, $pitch, $headPitch, $velocity, \sul\metadata\minecraft316\Metadata $metadata)
+    public function __constructor($entityId, $uuid, $type, $position, $yaw, $pitch, $headPitch, $velocity, \sul\metadata\minecraft\Metadata $metadata)
     {
         $this->entityId = $entityId;
         $this->uuid = $uuid;
