@@ -8,7 +8,7 @@
  * Repository: https://github.com/sel-project/sel-utils
  * Generated from https://github.com/sel-project/sel-utils/blob/master/xml/protocol/pocket113.xml
  */
-namespace sul\protocol\play\pocket113;
+namespace sul\protocol\play\pocket;
 
 use utils\Packet;
 
@@ -28,7 +28,7 @@ class CraftingEvent extends Packet
 
     public function __constructor() {}
 
-    public function __constructor($window, $type, \sul\protocol\pocket113\types\McpeUuid $uuid, $input, $output)
+    public function __constructor($window, $type, \sul\protocol\pocket\types\McpeUuid $uuid, $input, $output)
     {
         $this->window = $window;
         $this->type = $type;

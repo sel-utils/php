@@ -8,7 +8,7 @@
  * Repository: https://github.com/sel-project/sel-utils
  * Generated from https://github.com/sel-project/sel-utils/blob/master/xml/protocol/pocket113.xml
  */
-namespace sul\protocol\play\pocket113;
+namespace sul\protocol\play\pocket;
 
 use utils\Packet;
 
@@ -25,7 +25,7 @@ class FullChunkData extends Packet
 
     public function __constructor() {}
 
-    public function __constructor($position, \sul\protocol\pocket113\types\ChunkData $data)
+    public function __constructor($position, \sul\protocol\pocket\types\ChunkData $data)
     {
         $this->position = $position;
         $this->data = $data;

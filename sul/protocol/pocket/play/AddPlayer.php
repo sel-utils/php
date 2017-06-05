@@ -8,7 +8,7 @@
  * Repository: https://github.com/sel-project/sel-utils
  * Generated from https://github.com/sel-project/sel-utils/blob/master/xml/protocol/pocket113.xml
  */
-namespace sul\protocol\play\pocket113;
+namespace sul\protocol\play\pocket;
 
 use utils\Packet;
 
@@ -34,7 +34,7 @@ class AddPlayer extends Packet
 
     public function __constructor() {}
 
-    public function __constructor(\sul\protocol\pocket113\types\McpeUuid $uuid, $username, $entityId, $runtimeId, $position, $motion, $pitch, $headYaw, $yaw, \sul\protocol\pocket113\types\Slot $heldItem, \sul\metadata\pocket113\Metadata $metadata)
+    public function __constructor(\sul\protocol\pocket\types\McpeUuid $uuid, $username, $entityId, $runtimeId, $position, $motion, $pitch, $headYaw, $yaw, \sul\protocol\pocket\types\Slot $heldItem, \sul\metadata\pocket\Metadata $metadata)
     {
         $this->uuid = $uuid;
         $this->username = $username;

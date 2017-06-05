@@ -10,7 +10,7 @@
  */
 namespace sul\attributes;
 
-class Pocket113
+class Pocket
 {
 
     const HEALTH = ["id" => "minecraft:health", "min" => 0, "max" => 20, "default" => 20];

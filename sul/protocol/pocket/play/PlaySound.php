@@ -8,7 +8,7 @@
  * Repository: https://github.com/sel-project/sel-utils
  * Generated from https://github.com/sel-project/sel-utils/blob/master/xml/protocol/pocket113.xml
  */
-namespace sul\protocol\play\pocket113;
+namespace sul\protocol\play\pocket;
 
 use utils\Packet;
 
@@ -27,7 +27,7 @@ class PlaySound extends Packet
 
     public function __constructor() {}
 
-    public function __constructor($name, \sul\protocol\pocket113\types\BlockPosition $position, $volume, $pitch)
+    public function __constructor($name, \sul\protocol\pocket\types\BlockPosition $position, $volume, $pitch)
     {
         $this->name = $name;
         $this->position = $position;

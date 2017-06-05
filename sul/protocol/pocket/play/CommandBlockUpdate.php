@@ -8,7 +8,7 @@
  * Repository: https://github.com/sel-project/sel-utils
  * Generated from https://github.com/sel-project/sel-utils/blob/master/xml/protocol/pocket113.xml
  */
-namespace sul\protocol\play\pocket113;
+namespace sul\protocol\play\pocket;
 
 use utils\Packet;
 
@@ -33,7 +33,7 @@ class CommandBlockUpdate extends Packet
 
     public function __constructor() {}
 
-    public function __constructor($updateBlock, \sul\protocol\pocket113\types\BlockPosition $position, $mode, $redstoneMode, $conditional, $minecart, $command, $lastOutput, $hover, $trackOutput)
+    public function __constructor($updateBlock, \sul\protocol\pocket\types\BlockPosition $position, $mode, $redstoneMode, $conditional, $minecart, $command, $lastOutput, $hover, $trackOutput)
     {
         $this->updateBlock = $updateBlock;
         $this->position = $position;

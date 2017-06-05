@@ -8,7 +8,7 @@
  * Repository: https://github.com/sel-project/sel-utils
  * Generated from https://github.com/sel-project/sel-utils/blob/master/xml/protocol/pocket113.xml
  */
-namespace sul\protocol\play\pocket113;
+namespace sul\protocol\play\pocket;
 
 use utils\Packet;
 
@@ -24,7 +24,7 @@ class AddItem extends Packet
 
     public function __constructor() {}
 
-    public function __constructor(\sul\protocol\pocket113\types\Slot $item)
+    public function __constructor(\sul\protocol\pocket\types\Slot $item)
     {
         $this->item = $item;
     }

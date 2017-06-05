@@ -8,7 +8,7 @@
  * Repository: https://github.com/sel-project/sel-utils
  * Generated from https://github.com/sel-project/sel-utils/blob/master/xml/protocol/pocket113.xml
  */
-namespace sul\protocol\play\pocket113;
+namespace sul\protocol\play\pocket;
 
 use utils\Packet;
 
@@ -27,7 +27,7 @@ class InventoryAction extends Packet
 
     public function __constructor() {}
 
-    public function __constructor($action, \sul\protocol\pocket113\types\Slot $item, $unknown2, $unknown3)
+    public function __constructor($action, \sul\protocol\pocket\types\Slot $item, $unknown2, $unknown3)
     {
         $this->action = $action;
         $this->item = $item;

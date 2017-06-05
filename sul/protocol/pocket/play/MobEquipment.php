@@ -8,7 +8,7 @@
  * Repository: https://github.com/sel-project/sel-utils
  * Generated from https://github.com/sel-project/sel-utils/blob/master/xml/protocol/pocket113.xml
  */
-namespace sul\protocol\play\pocket113;
+namespace sul\protocol\play\pocket;
 
 use utils\Packet;
 
@@ -28,7 +28,7 @@ class MobEquipment extends Packet
 
     public function __constructor() {}
 
-    public function __constructor($entityId, \sul\protocol\pocket113\types\Slot $item, $inventorySlot, $hotbarSlot, $unknown4)
+    public function __constructor($entityId, \sul\protocol\pocket\types\Slot $item, $inventorySlot, $hotbarSlot, $unknown4)
     {
         $this->entityId = $entityId;
         $this->item = $item;

@@ -8,7 +8,7 @@
  * Repository: https://github.com/sel-project/sel-utils
  * Generated from https://github.com/sel-project/sel-utils/blob/master/xml/protocol/pocket113.xml
  */
-namespace sul\protocol\play\pocket113;
+namespace sul\protocol\play\pocket;
 
 use utils\Packet;
 
@@ -30,7 +30,7 @@ class SetSpawnPosition extends Packet
 
     public function __constructor() {}
 
-    public function __constructor($type, \sul\protocol\pocket113\types\BlockPosition $position, $forced)
+    public function __constructor($type, \sul\protocol\pocket\types\BlockPosition $position, $forced)
     {
         $this->type = $type;
         $this->position = $position;

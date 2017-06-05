@@ -8,7 +8,7 @@
  * Repository: https://github.com/sel-project/sel-utils
  * Generated from https://github.com/sel-project/sel-utils/blob/master/xml/protocol/pocket113.xml
  */
-namespace sul\protocol\play\pocket113;
+namespace sul\protocol\play\pocket;
 
 use utils\Packet;
 
@@ -28,7 +28,7 @@ class AddPainting extends Packet
 
     public function __constructor() {}
 
-    public function __constructor($entityId, $runtimeId, \sul\protocol\pocket113\types\BlockPosition $position, $direction, $title)
+    public function __constructor($entityId, $runtimeId, \sul\protocol\pocket\types\BlockPosition $position, $direction, $title)
     {
         $this->entityId = $entityId;
         $this->runtimeId = $runtimeId;

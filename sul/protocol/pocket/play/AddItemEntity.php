@@ -8,7 +8,7 @@
  * Repository: https://github.com/sel-project/sel-utils
  * Generated from https://github.com/sel-project/sel-utils/blob/master/xml/protocol/pocket113.xml
  */
-namespace sul\protocol\play\pocket113;
+namespace sul\protocol\play\pocket;
 
 use utils\Packet;
 
@@ -29,7 +29,7 @@ class AddItemEntity extends Packet
 
     public function __constructor() {}
 
-    public function __constructor($entityId, $runtimeId, \sul\protocol\pocket113\types\Slot $item, $position, $motion, \sul\metadata\pocket113\Metadata $metadata)
+    public function __constructor($entityId, $runtimeId, \sul\protocol\pocket\types\Slot $item, $position, $motion, \sul\metadata\pocket\Metadata $metadata)
     {
         $this->entityId = $entityId;
         $this->runtimeId = $runtimeId;

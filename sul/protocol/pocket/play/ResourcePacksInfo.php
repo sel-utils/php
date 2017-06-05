@@ -8,7 +8,7 @@
  * Repository: https://github.com/sel-project/sel-utils
  * Generated from https://github.com/sel-project/sel-utils/blob/master/xml/protocol/pocket113.xml
  */
-namespace sul\protocol\play\pocket113;
+namespace sul\protocol\play\pocket;
 
 use utils\Packet;
 
@@ -26,7 +26,7 @@ class ResourcePacksInfo extends Packet
 
     public function __constructor() {}
 
-    public function __constructor($mustAccept, \sul\protocol\pocket113\types\PackWithSize[] $behaviourPacks, \sul\protocol\pocket113\types\PackWithSize[] $resourcePacks)
+    public function __constructor($mustAccept, \sul\protocol\pocket\types\PackWithSize[] $behaviourPacks, \sul\protocol\pocket\types\PackWithSize[] $resourcePacks)
     {
         $this->mustAccept = $mustAccept;
         $this->behaviourPacks = $behaviourPacks;

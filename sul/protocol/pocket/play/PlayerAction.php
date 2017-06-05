@@ -8,7 +8,7 @@
  * Repository: https://github.com/sel-project/sel-utils
  * Generated from https://github.com/sel-project/sel-utils/blob/master/xml/protocol/pocket113.xml
  */
-namespace sul\protocol\play\pocket113;
+namespace sul\protocol\play\pocket;
 
 use utils\Packet;
 
@@ -43,7 +43,7 @@ class PlayerAction extends Packet
 
     public function __constructor() {}
 
-    public function __constructor($entityId, $action, \sul\protocol\pocket113\types\BlockPosition $position, $face)
+    public function __constructor($entityId, $action, \sul\protocol\pocket\types\BlockPosition $position, $face)
     {
         $this->entityId = $entityId;
         $this->action = $action;
