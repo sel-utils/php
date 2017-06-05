@@ -682,6 +682,7 @@ class Items
         self::add(new Item("spawn rabbit", new ItemData(383, 101), new ItemData(383, 18), 64));
         self::add(new Item("spawn polar bear", new ItemData(383, 102), new ItemData(383, 28), 64));
         self::add(new Item("spawn llama", new ItemData(383, 103), new ItemData(383, 29), 64));
+        self::add(new Item("spawn parrot", new ItemData(383, 105), null, 64));
         self::add(new Item("spawn villager", new ItemData(383, 120), new ItemData(383, 15), 64));
         self::add(new Item("spawn npc", null, new ItemData(383, 51), 64));
         self::add(new Item("bottle o enchanting", new ItemData(384, 0), new ItemData(384, 0), 64));
@@ -759,6 +760,7 @@ class Items
         self::add(new Item("undying totem", new ItemData(449, 0), new ItemData(450, 0), 1));
         self::add(new Item("shulker shell", new ItemData(450, 0), new ItemData(445, 0), 64));
         self::add(new Item("iron nugget", new ItemData(452, 0), new ItemData(452, 0), 64));
+        self::add(new Item("knowledge book", new ItemData(453, 0), null, 1));
         self::add(new Item("disc 13", new ItemData(2256, 0), null, 1));
         self::add(new Item("disc cat", new ItemData(2257, 0), null, 1));
         self::add(new Item("disc blocks", new ItemData(2258, 0), null, 1));
