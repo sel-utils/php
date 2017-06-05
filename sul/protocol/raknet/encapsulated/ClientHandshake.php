@@ -8,7 +8,7 @@
  * Repository: https://github.com/sel-project/sel-utils
  * Generated from https://github.com/sel-project/sel-utils/blob/master/xml/protocol/raknet8.xml
  */
-namespace sul\protocol\encapsulated\raknet8;
+namespace sul\protocol\encapsulated\raknet;
 
 use utils\Packet;
 
@@ -27,7 +27,7 @@ class ClientHandshake extends Packet
 
     public function __constructor() {}
 
-    public function __constructor(\sul\protocol\raknet8\types\Address $clientAddress, $systemAddresses, $pingId, $clientId)
+    public function __constructor(\sul\protocol\raknet\types\Address $clientAddress, $systemAddresses, $pingId, $clientId)
     {
         $this->clientAddress = $clientAddress;
         $this->systemAddresses = $systemAddresses;

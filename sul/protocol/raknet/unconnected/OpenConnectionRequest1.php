@@ -8,7 +8,7 @@
  * Repository: https://github.com/sel-project/sel-utils
  * Generated from https://github.com/sel-project/sel-utils/blob/master/xml/protocol/raknet8.xml
  */
-namespace sul\protocol\unconnected\raknet8;
+namespace sul\protocol\unconnected\raknet;
 
 use utils\Packet;
 

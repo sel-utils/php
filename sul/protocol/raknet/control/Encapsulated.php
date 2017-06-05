@@ -8,7 +8,7 @@
  * Repository: https://github.com/sel-project/sel-utils
  * Generated from https://github.com/sel-project/sel-utils/blob/master/xml/protocol/raknet8.xml
  */
-namespace sul\protocol\control\raknet8;
+namespace sul\protocol\control\raknet;
 
 use utils\Packet;
 
@@ -25,7 +25,7 @@ class Encapsulated extends Packet
 
     public function __constructor() {}
 
-    public function __constructor($count, \sul\protocol\raknet8\types\Encapsulation $encapsulation)
+    public function __constructor($count, \sul\protocol\raknet\types\Encapsulation $encapsulation)
     {
         $this->count = $count;
         $this->encapsulation = $encapsulation;

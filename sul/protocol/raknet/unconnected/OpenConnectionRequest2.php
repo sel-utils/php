@@ -8,7 +8,7 @@
  * Repository: https://github.com/sel-project/sel-utils
  * Generated from https://github.com/sel-project/sel-utils/blob/master/xml/protocol/raknet8.xml
  */
-namespace sul\protocol\unconnected\raknet8;
+namespace sul\protocol\unconnected\raknet;
 
 use utils\Packet;
 
@@ -27,7 +27,7 @@ class OpenConnectionRequest2 extends Packet
 
     public function __constructor() {}
 
-    public function __constructor($magic, \sul\protocol\raknet8\types\Address $serverAddress, $mtuLength, $clientId)
+    public function __constructor($magic, \sul\protocol\raknet\types\Address $serverAddress, $mtuLength, $clientId)
     {
         $this->magic = $magic;
         $this->serverAddress = $serverAddress;
