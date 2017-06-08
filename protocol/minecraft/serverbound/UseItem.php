@@ -6,7 +6,7 @@
  * 
  * License: https://github.com/sel-project/sel-utils/blob/master/LICENSE
  * Repository: https://github.com/sel-project/sel-utils
- * Generated from https://github.com/sel-project/sel-utils/blob/master/xml/protocol/minecraft316.xml
+ * Generated from https://github.com/sel-project/sel-utils/blob/master/xml/protocol/minecraft335.xml
  */
 namespace sul\protocol\serverbound\minecraft;
 
@@ -15,7 +15,7 @@ use utils\Packet;
 class UseItem extends Packet
 {
 
-    public const ID = 29;
+    public const ID = 32;
 
     public const CLIENTBOUND = false;
     public const SERVERBOUND = true;

@@ -6,7 +6,7 @@
  * 
  * License: https://github.com/sel-project/sel-utils/blob/master/LICENSE
  * Repository: https://github.com/sel-project/sel-utils
- * Generated from https://github.com/sel-project/sel-utils/blob/master/xml/protocol/minecraft316.xml
+ * Generated from https://github.com/sel-project/sel-utils/blob/master/xml/protocol/minecraft335.xml
  */
 namespace sul\protocol\clientbound\minecraft;
 
@@ -15,7 +15,7 @@ use utils\Packet;
 class ScoreboardObjective extends Packet
 {
 
-    public const ID = 63;
+    public const ID = 65;
 
     public const CLIENTBOUND = true;
     public const SERVERBOUND = false;

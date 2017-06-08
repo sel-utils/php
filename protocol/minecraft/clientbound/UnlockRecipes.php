@@ -12,21 +12,34 @@ namespace sul\protocol\clientbound\minecraft;
 
 use utils\Packet;
 
-class PlayerListItem extends Packet
+class UnlockRecipes extends Packet
 {
 
-    public const ID = 45;
+    public const ID = 48;
 
     public const CLIENTBOUND = true;
     public const SERVERBOUND = false;
 
+    // action
+    public const ADD = 1;
+    public const REMOVE = 2;
+    public const ADD_WITHOUT_NOTIFICATION = 3;
+
     public $action;
+    public $openBook;
+    public $filtering;
+    public $recipes;
+    public $bookRecipes;
 
     public function __constructor() {}
 
-    public function __constructor($action)
+    public function __constructor($action, $openBook, $filtering, $recipes, $bookRecipes)
     {
         $this->action = $action;
+        $this->openBook = $openBook;
+        $this->filtering = $filtering;
+        $this->recipes = $recipes;
+        $this->bookRecipes = $bookRecipes;
     }
 
     public function getId()
@@ -36,6 +49,10 @@ class PlayerListItem extends Packet
 
     public function encode()
     {
+
+
+
+
 
     }
 

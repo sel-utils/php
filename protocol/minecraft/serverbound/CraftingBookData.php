@@ -8,25 +8,25 @@
  * Repository: https://github.com/sel-project/sel-utils
  * Generated from https://github.com/sel-project/sel-utils/blob/master/xml/protocol/minecraft335.xml
  */
-namespace sul\protocol\clientbound\minecraft;
+namespace sul\protocol\serverbound\minecraft;
 
 use utils\Packet;
 
-class PlayerListItem extends Packet
+class CraftingBookData extends Packet
 {
 
-    public const ID = 45;
+    public const ID = 23;
 
-    public const CLIENTBOUND = true;
-    public const SERVERBOUND = false;
+    public const CLIENTBOUND = false;
+    public const SERVERBOUND = true;
 
-    public $action;
+    public $type;
 
     public function __constructor() {}
 
-    public function __constructor($action)
+    public function __constructor($type)
     {
-        $this->action = $action;
+        $this->type = $type;
     }
 
     public function getId()

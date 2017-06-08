@@ -8,25 +8,31 @@
  * Repository: https://github.com/sel-project/sel-utils
  * Generated from https://github.com/sel-project/sel-utils/blob/master/xml/protocol/minecraft335.xml
  */
-namespace sul\protocol\clientbound\minecraft;
+namespace sul\protocol\serverbound\minecraft;
 
 use utils\Packet;
 
-class PlayerListItem extends Packet
+class AdvencementTab extends Packet
 {
 
-    public const ID = 45;
+    public const ID = 25;
 
-    public const CLIENTBOUND = true;
-    public const SERVERBOUND = false;
+    public const CLIENTBOUND = false;
+    public const SERVERBOUND = true;
+
+    // action
+    public const OPEN_TAB = 0;
+    public const CLOSE_SCREEN = 1;
 
     public $action;
+    public $tab;
 
     public function __constructor() {}
 
-    public function __constructor($action)
+    public function __constructor($action, $tab)
     {
         $this->action = $action;
+        $this->tab = $tab;
     }
 
     public function getId()
@@ -36,6 +42,7 @@ class PlayerListItem extends Packet
 
     public function encode()
     {
+
 
     }
 

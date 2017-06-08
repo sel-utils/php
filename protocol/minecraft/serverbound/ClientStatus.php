@@ -6,7 +6,7 @@
  * 
  * License: https://github.com/sel-project/sel-utils/blob/master/LICENSE
  * Repository: https://github.com/sel-project/sel-utils
- * Generated from https://github.com/sel-project/sel-utils/blob/master/xml/protocol/minecraft316.xml
+ * Generated from https://github.com/sel-project/sel-utils/blob/master/xml/protocol/minecraft335.xml
  */
 namespace sul\protocol\serverbound\minecraft;
 
@@ -15,7 +15,7 @@ use utils\Packet;
 class ClientStatus extends Packet
 {
 
-    public const ID = 3;
+    public const ID = 4;
 
     public const CLIENTBOUND = false;
     public const SERVERBOUND = true;
@@ -23,7 +23,6 @@ class ClientStatus extends Packet
     // action
     public const RESPAWN = 0;
     public const REQUEST_STATS = 1;
-    public const OPEN_INVENTORY = 2;
 
     public $action;
 

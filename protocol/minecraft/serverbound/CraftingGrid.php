@@ -8,25 +8,31 @@
  * Repository: https://github.com/sel-project/sel-utils
  * Generated from https://github.com/sel-project/sel-utils/blob/master/xml/protocol/minecraft335.xml
  */
-namespace sul\protocol\clientbound\minecraft;
+namespace sul\protocol\serverbound\minecraft;
 
 use utils\Packet;
 
-class PlayerListItem extends Packet
+class CraftingGrid extends Packet
 {
 
-    public const ID = 45;
+    public const ID = 1;
 
-    public const CLIENTBOUND = true;
-    public const SERVERBOUND = false;
+    public const CLIENTBOUND = false;
+    public const SERVERBOUND = true;
 
+    public $window;
     public $action;
+    public $returnEntry;
+    public $prepareEntry;
 
     public function __constructor() {}
 
-    public function __constructor($action)
+    public function __constructor($window, $action, \sul\protocol\minecraft\types\Entry[] $returnEntry, \sul\protocol\minecraft\types\Entry[] $prepareEntry)
     {
+        $this->window = $window;
         $this->action = $action;
+        $this->returnEntry = $returnEntry;
+        $this->prepareEntry = $prepareEntry;
     }
 
     public function getId()
@@ -36,6 +42,9 @@ class PlayerListItem extends Packet
 
     public function encode()
     {
+
+
+
 
     }
 

@@ -12,21 +12,23 @@ namespace sul\protocol\clientbound\minecraft;
 
 use utils\Packet;
 
-class PlayerListItem extends Packet
+class AdvancementProgress extends Packet
 {
 
-    public const ID = 45;
+    public const ID = 54;
 
     public const CLIENTBOUND = true;
     public const SERVERBOUND = false;
 
-    public $action;
+    public $notEmpty;
+    public $identifier;
 
     public function __constructor() {}
 
-    public function __constructor($action)
+    public function __constructor($notEmpty, $identifier)
     {
-        $this->action = $action;
+        $this->notEmpty = $notEmpty;
+        $this->identifier = $identifier;
     }
 
     public function getId()
@@ -36,6 +38,7 @@ class PlayerListItem extends Packet
 
     public function encode()
     {
+
 
     }
 

@@ -6,7 +6,7 @@
  * 
  * License: https://github.com/sel-project/sel-utils/blob/master/LICENSE
  * Repository: https://github.com/sel-project/sel-utils
- * Generated from https://github.com/sel-project/sel-utils/blob/master/xml/attributes/minecraft316.xml
+ * Generated from https://github.com/sel-project/sel-utils/blob/master/xml/attributes/minecraft335.xml
  */
 namespace sul\attributes;
 
