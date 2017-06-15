@@ -61,7 +61,7 @@ class StartGame extends Packet
     public $time;
     public $version;
     public $rainLevel;
-    public $lightingLevel;
+    public $lightningLevel;
     public $commandsEnabled;
     public $textureRequired;
     public $gameRules;
@@ -73,7 +73,7 @@ class StartGame extends Packet
 
     public function __constructor() {}
 
-    public function __constructor($entityId, $runtimeId, $gamemode, $position, $yaw, $pitch, $seed, $dimension, $generator, $worldGamemode, $difficulty, $spawnPosition, $loadedInCreative, $time, $version, $rainLevel, $lightingLevel, $commandsEnabled, $textureRequired, $gameRules, $levelId, $worldName, $premiumWorldTemplate, $unknown23, $worldTicks)
+    public function __constructor($entityId, $runtimeId, $gamemode, $position, $yaw, $pitch, $seed, $dimension, $generator, $worldGamemode, $difficulty, $spawnPosition, $loadedInCreative, $time, $version, $rainLevel, $lightningLevel, $commandsEnabled, $textureRequired, $gameRules, $levelId, $worldName, $premiumWorldTemplate, $unknown23, $worldTicks)
     {
         $this->entityId = $entityId;
         $this->runtimeId = $runtimeId;
@@ -91,7 +91,7 @@ class StartGame extends Packet
         $this->time = $time;
         $this->version = $version;
         $this->rainLevel = $rainLevel;
-        $this->lightingLevel = $lightingLevel;
+        $this->lightningLevel = $lightningLevel;
         $this->commandsEnabled = $commandsEnabled;
         $this->textureRequired = $textureRequired;
         $this->gameRules = $gameRules;
