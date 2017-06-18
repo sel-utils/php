@@ -21,8 +21,8 @@ class Interact extends Packet
     public const SERVERBOUND = true;
 
     // action
-    public const ATTACK = 1;
-    public const INTERACT = 2;
+    public const INTERACT = 1;
+    public const ATTACK = 2;
     public const LEAVE_VEHICLE = 3;
     public const HOVER = 4;
 
