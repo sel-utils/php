@@ -15,7 +15,7 @@ use utils\Packet;
 class SimpleEvent extends Packet
 {
 
-    public const ID = 63;
+    public const ID = 64;
 
     public const CLIENTBOUND = true;
     public const SERVERBOUND = true;
