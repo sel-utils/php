@@ -15,7 +15,7 @@ use utils\Packet;
 class TelemetryEvent extends Packet
 {
 
-    public const ID = 64;
+    public const ID = 65;
 
     public const CLIENTBOUND = true;
     public const SERVERBOUND = false;

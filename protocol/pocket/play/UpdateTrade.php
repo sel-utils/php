@@ -20,28 +20,28 @@ class UpdateTrade extends Packet
     public const CLIENTBOUND = true;
     public const SERVERBOUND = false;
 
-    public $unknown0;
-    public $unknown1;
+    public $window;
+    public $windowType = 15;
     public $unknown2;
     public $unknown3;
-    public $unknown4;
+    public $willing;
     public $trader;
     public $player;
-    public $unknown7;
+    public $displayName;
     public $offers;
 
     public function __constructor() {}
 
-    public function __constructor($unknown0, $unknown1, $unknown2, $unknown3, $unknown4, $trader, $player, $unknown7, $offers)
+    public function __constructor($window, $windowType, $unknown2, $unknown3, $willing, $trader, $player, $displayName, $offers)
     {
-        $this->unknown0 = $unknown0;
-        $this->unknown1 = $unknown1;
+        $this->window = $window;
+        $this->windowType = $windowType;
         $this->unknown2 = $unknown2;
         $this->unknown3 = $unknown3;
-        $this->unknown4 = $unknown4;
+        $this->willing = $willing;
         $this->trader = $trader;
         $this->player = $player;
-        $this->unknown7 = $unknown7;
+        $this->displayName = $displayName;
         $this->offers = $offers;
     }
 
