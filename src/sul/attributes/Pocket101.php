@@ -14,7 +14,7 @@ class Pocket101
 {
 
     const HEALTH = ["id" => "minecraft:health", "min" => 0, "max" => 20, "default" => 20];
-    const ABSORPTION = ["id" => "minecraft:generic.absorption", "min" => 0, "max" => 4, "default" => 0];
+    const ABSORPTION = ["id" => "minecraft:absorption", "min" => 0, "max" => 4, "default" => 0];
     const HUNGER = ["id" => "minecraft:player.hunger", "min" => 0, "max" => 20, "default" => 20];
     const SATURATION = ["id" => "minecraft:player.saturation", "min" => 0, "max" => 20, "default" => 5];
     const EXPERIENCE = ["id" => "minecraft:player.experience", "min" => 0, "max" => 1, "default" => 0];
