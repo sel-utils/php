@@ -20,17 +20,19 @@ class PlayerInput extends Packet
     public const CLIENTBOUND = false;
     public const SERVERBOUND = true;
 
-    public $motion;
-    public $flags;
+    public $sideways;
+    public $forward;
     public $unknown2;
+    public $unknown3;
 
     public function __constructor() {}
 
-    public function __constructor($motion, $flags, $unknown2)
+    public function __constructor($sideways, $forward, $unknown2, $unknown3)
     {
-        $this->motion = $motion;
-        $this->flags = $flags;
+        $this->sideways = $sideways;
+        $this->forward = $forward;
         $this->unknown2 = $unknown2;
+        $this->unknown3 = $unknown3;
     }
 
     public function getId()
@@ -40,6 +42,7 @@ class PlayerInput extends Packet
 
     public function encode()
     {
+
 
 
 
