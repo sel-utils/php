@@ -399,10 +399,10 @@ class Items
         self::add(new Item("repeating command block", new ItemData(210, 0), null, 64));
         self::add(new Item("chain command block", new ItemData(211, 0), null, 64));
         self::add(new Item("frosted ice", new ItemData(212, 0), new ItemData(207, 0), 64));
-        self::add(new Item("magma block", new ItemData(213, 0), null, 64));
-        self::add(new Item("nether wart block", new ItemData(214, 0), null, 64));
-        self::add(new Item("red nether brick", new ItemData(215, 0), null, 64));
-        self::add(new Item("bone block", new ItemData(216, 0), null, 64));
+        self::add(new Item("magma block", new ItemData(213, 0), new ItemData(213, 0), 64));
+        self::add(new Item("nether wart block", new ItemData(214, 0), new ItemData(214, 0), 64));
+        self::add(new Item("red nether brick", new ItemData(215, 0), new ItemData(215, 0), 64));
+        self::add(new Item("bone block", new ItemData(216, 0), new ItemData(216, 0), 64));
         self::add(new Item("structure void", new ItemData(217, 0), null, 64));
         self::add(new Item("observer", new ItemData(218, 0), new ItemData(251, 0), 64));
         self::add(new Item("white shulker box", new ItemData(219, 0), new ItemData(218, 0), 64));
