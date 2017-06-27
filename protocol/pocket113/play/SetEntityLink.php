@@ -21,20 +21,19 @@ class SetEntityLink extends Packet
     public const SERVERBOUND = false;
 
     // action
-    public const ADD = 0;
-    public const RIDE = 1;
-    public const REMOVE = 2;
+    public const REMOVE = 0;
+    public const ADD = 1;
 
-    public $from;
-    public $to;
+    public $vehicle;
+    public $passenger;
     public $action;
 
     public function __constructor() {}
 
-    public function __constructor($from, $to, $action)
+    public function __constructor($vehicle, $passenger, $action)
     {
-        $this->from = $from;
-        $this->to = $to;
+        $this->vehicle = $vehicle;
+        $this->passenger = $passenger;
         $this->action = $action;
     }
 
