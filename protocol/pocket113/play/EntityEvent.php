@@ -35,6 +35,7 @@ class EntityEvent extends Packet
     public const SQUID_INK_CLOUD = 15;
     public const AMBIENT_SOUND = 16;
     public const RESPAWN = 17;
+    public const UNLEASH = 63;
 
     public $entityId;
     public $eventId;
