@@ -18,7 +18,7 @@ class BlockEntityData extends Packet
     public const ID = 56;
 
     public const CLIENTBOUND = true;
-    public const SERVERBOUND = false;
+    public const SERVERBOUND = true;
 
     public $position;
     public $nbt;
