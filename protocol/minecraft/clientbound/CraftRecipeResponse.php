@@ -12,23 +12,23 @@ namespace sul\protocol\clientbound\minecraft;
 
 use utils\Packet;
 
-class Teams extends Packet
+class CraftRecipeResponse extends Packet
 {
 
-    public const ID = 68;
+    public const ID = 43;
 
     public const CLIENTBOUND = true;
     public const SERVERBOUND = false;
 
-    public $name;
-    public $mode;
+    public $window;
+    public $recipe;
 
     public function __constructor() {}
 
-    public function __constructor($name, $mode)
+    public function __constructor($window, $recipe)
     {
-        $this->name = $name;
-        $this->mode = $mode;
+        $this->window = $window;
+        $this->recipe = $recipe;
     }
 
     public function getId()

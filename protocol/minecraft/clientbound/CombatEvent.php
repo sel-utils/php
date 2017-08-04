@@ -6,7 +6,7 @@
  * 
  * License: https://github.com/sel-project/sel-utils/blob/master/LICENSE
  * Repository: https://github.com/sel-project/sel-utils
- * Generated from https://github.com/sel-project/sel-utils/blob/master/xml/protocol/minecraft335.xml
+ * Generated from https://github.com/sel-project/sel-utils/blob/master/xml/protocol/minecraft338.xml
  */
 namespace sul\protocol\clientbound\minecraft;
 
@@ -15,7 +15,7 @@ use utils\Packet;
 class CombatEvent extends Packet
 {
 
-    public const ID = 44;
+    public const ID = 45;
 
     public const CLIENTBOUND = true;
     public const SERVERBOUND = false;
