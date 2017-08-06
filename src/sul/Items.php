@@ -474,10 +474,10 @@ class Items
         self::add(new Item("nether reactor core", null, new ItemData(247, 0), 64));
         self::add(new Item("update block", null, new ItemData(248, 0), 64));
         self::add(new Item("ateupd block", null, new ItemData(249, 0), 64));
-        self::add(new Item("structure save", new ItemData(255, 0), null, 64));
-        self::add(new Item("structure load", new ItemData(255, 1), null, 64));
-        self::add(new Item("structure corner", new ItemData(255, 2), null, 64));
-        self::add(new Item("structure data", new ItemData(255, 3), null, 64));
+        self::add(new Item("structure save", new ItemData(255, 0), new ItemData(252, 0), 64));
+        self::add(new Item("structure load", new ItemData(255, 1), new ItemData(252, 1), 64));
+        self::add(new Item("structure corner", new ItemData(255, 2), new ItemData(252, 2), 64));
+        self::add(new Item("structure data", new ItemData(255, 3), new ItemData(252, 3), 64));
         self::add(new Item("iron shovel", new ItemData(256, 0), new ItemData(256, 0), 1));
         self::add(new Item("iron pickaxe", new ItemData(257, 0), new ItemData(257, 0), 1));
         self::add(new Item("iron axe", new ItemData(258, 0), new ItemData(258, 0), 1));
@@ -724,8 +724,8 @@ class Items
         self::add(new Item("spawn npc", null, new ItemData(383, 51), 64));
         self::add(new Item("bottle o enchanting", new ItemData(384, 0), new ItemData(384, 0), 64));
         self::add(new Item("fire charge", new ItemData(385, 0), new ItemData(385, 0), 64));
-        self::add(new Item("book and quill", new ItemData(386, 0), null, 1));
-        self::add(new Item("written book", new ItemData(387, 0), null, 1));
+        self::add(new Item("book and quill", new ItemData(386, 0), new ItemData(386, 0), 1));
+        self::add(new Item("written book", new ItemData(387, 0), new ItemData(387, 0), 1));
         self::add(new Item("emerald", new ItemData(388, 0), new ItemData(388, 0), 64));
         self::add(new Item("item frame", new ItemData(389, 0), new ItemData(389, 0), 64));
         self::add(new Item("flower pot", new ItemData(390, 0), new ItemData(390, 0), 64));
@@ -745,8 +745,8 @@ class Items
         self::add(new Item("carrot on a stick", new ItemData(398, 0), new ItemData(398, 0), 1));
         self::add(new Item("nether star", new ItemData(399, 0), new ItemData(399, 0), 64));
         self::add(new Item("pumpkin pie", new ItemData(400, 0), new ItemData(400, 0), 64));
-        self::add(new Item("firework rocket", new ItemData(401, 0), null, 64));
-        self::add(new Item("firework star", new ItemData(402, 0), null, 64));
+        self::add(new Item("firework rocket", new ItemData(401, 0), new ItemData(401, 0), 64));
+        self::add(new Item("firework star", new ItemData(402, 0), new ItemData(402, 0), 64));
         self::add(new Item("enchanted book", new ItemData(403, 0), new ItemData(403, 0), 1));
         self::add(new Item("redstone comparator", new ItemData(404, 0), new ItemData(404, 0), 64));
         self::add(new Item("nether brick", new ItemData(405, 0), new ItemData(405, 0), 64));
@@ -760,7 +760,7 @@ class Items
         self::add(new Item("rabbit stew", new ItemData(413, 0), new ItemData(413, 0), 1));
         self::add(new Item("rabbit foot", new ItemData(414, 0), new ItemData(414, 0), 64));
         self::add(new Item("rabbit hide", new ItemData(415, 0), new ItemData(415, 0), 64));
-        self::add(new Item("armor stand", new ItemData(416, 0), null, 16));
+        self::add(new Item("armor stand", new ItemData(416, 0), new ItemData(425, 0), 16));
         self::add(new Item("leather horse armor", null, new ItemData(416, 0), 1));
         self::add(new Item("iron horse armor", new ItemData(417, 0), new ItemData(417, 0), 1));
         self::add(new Item("golden horse armor", new ItemData(418, 0), new ItemData(418, 0), 1));
@@ -770,7 +770,7 @@ class Items
         self::add(new Item("minecart with command block", new ItemData(422, 0), new ItemData(443, 0), 1));
         self::add(new Item("raw mutton", new ItemData(423, 0), new ItemData(423, 0), 64));
         self::add(new Item("cooked mutton", new ItemData(424, 0), new ItemData(424, 0), 64));
-        self::add(new Item("banner", new ItemData(425, 0), null, 64));
+        self::add(new Item("banner", new ItemData(425, 0), new ItemData(446, 0), 64));
         self::add(new Item("end crystal", new ItemData(426, 0), new ItemData(426, 0), 64));
         self::add(new Item("spruce door", new ItemData(427, 0), new ItemData(427, 0), 64));
         self::add(new Item("birch door", new ItemData(428, 0), new ItemData(428, 0), 64));
@@ -909,18 +909,18 @@ class Items
         self::add(new Item("shulker shell", new ItemData(450, 0), new ItemData(445, 0), 64));
         self::add(new Item("iron nugget", new ItemData(452, 0), new ItemData(452, 0), 64));
         self::add(new Item("knowledge book", new ItemData(453, 0), null, 1));
-        self::add(new Item("disc 13", new ItemData(2256, 0), null, 1));
-        self::add(new Item("disc cat", new ItemData(2257, 0), null, 1));
-        self::add(new Item("disc blocks", new ItemData(2258, 0), null, 1));
-        self::add(new Item("disc chirp", new ItemData(2259, 0), null, 1));
-        self::add(new Item("disc far", new ItemData(2260, 0), null, 1));
-        self::add(new Item("disc mall", new ItemData(2261, 0), null, 1));
-        self::add(new Item("disc mellohi", new ItemData(2262, 0), null, 1));
-        self::add(new Item("disc stal", new ItemData(2263, 0), null, 1));
-        self::add(new Item("disc strad", new ItemData(2264, 0), null, 1));
-        self::add(new Item("disc ward", new ItemData(2265, 0), null, 1));
-        self::add(new Item("disc 11", new ItemData(2266, 0), null, 1));
-        self::add(new Item("disc wait", new ItemData(2267, 0), null, 1));
+        self::add(new Item("disc 13", new ItemData(2256, 0), new ItemData(500, 0), 1));
+        self::add(new Item("disc cat", new ItemData(2257, 0), new ItemData(501, 0), 1));
+        self::add(new Item("disc blocks", new ItemData(2258, 0), new ItemData(502, 0), 1));
+        self::add(new Item("disc chirp", new ItemData(2259, 0), new ItemData(503, 0), 1));
+        self::add(new Item("disc far", new ItemData(2260, 0), new ItemData(504, 0), 1));
+        self::add(new Item("disc mall", new ItemData(2261, 0), new ItemData(505, 0), 1));
+        self::add(new Item("disc mellohi", new ItemData(2262, 0), new ItemData(506, 0), 1));
+        self::add(new Item("disc stal", new ItemData(2263, 0), new ItemData(507, 0), 1));
+        self::add(new Item("disc strad", new ItemData(2264, 0), new ItemData(508, 0), 1));
+        self::add(new Item("disc ward", new ItemData(2265, 0), new ItemData(509, 0), 1));
+        self::add(new Item("disc 11", new ItemData(2266, 0), new ItemData(510, 0), 1));
+        self::add(new Item("disc wait", new ItemData(2267, 0), new ItemData(511, 0), 1));
 
     }
 
