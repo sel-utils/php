@@ -33,11 +33,11 @@ class AdventureSettings extends Packet
     public const MUTED = 1024;
 
     // permission level
-    public const USER = 0;
-    public const OPERATOR = 1;
-    public const HOST = 2;
-    public const AUTOMATION = 3;
-    public const ADMIN = 4;
+    public const LEVEL_USER = 0;
+    public const LEVEL_OPERATOR = 1;
+    public const LEVEL_HOST = 2;
+    public const LEVEL_AUTOMATION = 3;
+    public const LEVEL_ADMIN = 4;
 
     // abilities
     public const BUILD_AND_MINE = 1;
