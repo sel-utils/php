@@ -24,7 +24,8 @@ class PlayerAction extends Packet
     public const START_BREAK = 0;
     public const ABORT_BREAK = 1;
     public const STOP_BREAK = 2;
-    public const RELEASE_ITEM = 4;
+    public const GET_UPDATED_BLOCK = 3;
+    public const DROP_ITEM = 4;
     public const STOP_SLEEPING = 5;
     public const RESPAWN = 6;
     public const JUMP = 7;
@@ -34,7 +35,9 @@ class PlayerAction extends Packet
     public const STOP_SNEAK = 11;
     public const START_GLIDING = 14;
     public const STOP_GLIDING = 15;
+    public const BUILD_DENIED = 16;
     public const CONTINUE_BREAK = 17;
+    public const SET_ENCHANTMENT_SEED = 18;
 
     public $entityId;
     public $action;

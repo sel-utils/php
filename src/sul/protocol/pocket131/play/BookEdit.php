@@ -20,9 +20,16 @@ class BookEdit extends Packet
     public const CLIENTBOUND = true;
     public const SERVERBOUND = true;
 
-
+    public $type;
+    public $slot;
 
     public function __constructor() {}
+
+    public function __constructor($type, $slot)
+    {
+        $this->type = $type;
+        $this->slot = $slot;
+    }
 
     public function getId()
     {
@@ -31,6 +38,7 @@ class BookEdit extends Packet
 
     public function encode()
     {
+
 
     }
 

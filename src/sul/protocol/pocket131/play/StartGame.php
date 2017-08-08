@@ -77,10 +77,11 @@ class StartGame extends Packet
     public $premiumWorldTemplate;
     public $unknown30;
     public $worldTicks;
+    public $unknown32;
 
     public function __constructor() {}
 
-    public function __constructor($entityId, $runtimeId, $gamemode, $position, $yaw, $pitch, $seed, $dimension, $generator, $worldGamemode, $difficulty, $spawnPosition, $loadedInCreative, $time, $version, $rainLevel, $lightningLevel, $multiplayerGame, $broadcastToLan, $broadcastToXbl, $commandsEnabled, $textureRequired, $gameRules, $bonusChestEnabled, $trustPlayersEnabled, $permissionLevel, $unknown26, $levelId, $worldName, $premiumWorldTemplate, $unknown30, $worldTicks)
+    public function __constructor($entityId, $runtimeId, $gamemode, $position, $yaw, $pitch, $seed, $dimension, $generator, $worldGamemode, $difficulty, $spawnPosition, $loadedInCreative, $time, $version, $rainLevel, $lightningLevel, $multiplayerGame, $broadcastToLan, $broadcastToXbl, $commandsEnabled, $textureRequired, $gameRules, $bonusChestEnabled, $trustPlayersEnabled, $permissionLevel, $unknown26, $levelId, $worldName, $premiumWorldTemplate, $unknown30, $worldTicks, $unknown32)
     {
         $this->entityId = $entityId;
         $this->runtimeId = $runtimeId;
@@ -114,6 +115,7 @@ class StartGame extends Packet
         $this->premiumWorldTemplate = $premiumWorldTemplate;
         $this->unknown30 = $unknown30;
         $this->worldTicks = $worldTicks;
+        $this->unknown32 = $unknown32;
     }
 
     public function getId()
@@ -123,6 +125,7 @@ class StartGame extends Packet
 
     public function encode()
     {
+
 
 
 

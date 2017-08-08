@@ -396,9 +396,12 @@ class Items
         self::add(new Item("beetroot block", new ItemData(207, 0), new ItemData(244, 0), 64));
         self::add(new Item("grass path", new ItemData(208, 0), new ItemData(198, 0), 64));
         self::add(new Item("end gateway", new ItemData(209, 0), new ItemData(209, 0), 64));
-        self::add(new Item("repeating command block", new ItemData(210, 0), null, 64));
-        self::add(new Item("chain command block", new ItemData(211, 0), null, 64));
+        self::add(new Item("repeating command block", new ItemData(210, 0), new ItemData(188, 0), 64));
+        self::add(new Item("chain command block", new ItemData(211, 0), new ItemData(189, 0), 64));
         self::add(new Item("frosted ice", new ItemData(212, 0), new ItemData(207, 0), 64));
+        self::add(new Item("allow", null, new ItemData(210, 0), 64));
+        self::add(new Item("deny", null, new ItemData(211, 0), 64));
+        self::add(new Item("border block", null, new ItemData(212, 0), 64));
         self::add(new Item("magma block", new ItemData(213, 0), new ItemData(213, 0), 64));
         self::add(new Item("nether wart block", new ItemData(214, 0), new ItemData(214, 0), 64));
         self::add(new Item("red nether brick", new ItemData(215, 0), new ItemData(215, 0), 64));
@@ -469,6 +472,8 @@ class Items
         self::add(new Item("green concrete powder", new ItemData(252, 13), new ItemData(237, 13), 64));
         self::add(new Item("red concrete powder", new ItemData(252, 14), new ItemData(237, 14), 64));
         self::add(new Item("black concrete powder", new ItemData(252, 15), new ItemData(237, 15), 64));
+        self::add(new Item("chalkboard", null, new ItemData(230, 0), 64));
+        self::add(new Item("camera", null, new ItemData(242, 0), 64));
         self::add(new Item("stonecutter", null, new ItemData(245, 0), 64));
         self::add(new Item("glowing obsidian", null, new ItemData(246, 0), 64));
         self::add(new Item("nether reactor core", null, new ItemData(247, 0), 64));

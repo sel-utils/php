@@ -20,25 +20,15 @@ class EntityPickRequest extends Packet
     public const CLIENTBOUND = false;
     public const SERVERBOUND = true;
 
-    public $blockPosition;
-    public $hotbarSlot;
-    public $face;
-    public $facePosition;
-    public $position;
+    public $entityType;
     public $slot;
-    public $item;
 
     public function __constructor() {}
 
-    public function __constructor(\sul\protocol\pocket131\types\BlockPosition $blockPosition, $hotbarSlot, $face, $facePosition, $position, $slot, \sul\protocol\pocket131\types\Slot $item)
+    public function __constructor($entityType, $slot)
     {
-        $this->blockPosition = $blockPosition;
-        $this->hotbarSlot = $hotbarSlot;
-        $this->face = $face;
-        $this->facePosition = $facePosition;
-        $this->position = $position;
+        $this->entityType = $entityType;
         $this->slot = $slot;
-        $this->item = $item;
     }
 
     public function getId()
@@ -48,11 +38,6 @@ class EntityPickRequest extends Packet
 
     public function encode()
     {
-
-
-
-
-
 
 
     }

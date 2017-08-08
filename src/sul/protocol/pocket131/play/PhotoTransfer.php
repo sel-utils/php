@@ -20,9 +20,18 @@ class PhotoTransfer extends Packet
     public const CLIENTBOUND = false;
     public const SERVERBOUND = true;
 
-
+    public $unknown0;
+    public $unknown1;
+    public $unknown2;
 
     public function __constructor() {}
+
+    public function __constructor($unknown0, $unknown1, $unknown2)
+    {
+        $this->unknown0 = $unknown0;
+        $this->unknown1 = $unknown1;
+        $this->unknown2 = $unknown2;
+    }
 
     public function getId()
     {
@@ -31,6 +40,8 @@ class PhotoTransfer extends Packet
 
     public function encode()
     {
+
+
 
     }
 
