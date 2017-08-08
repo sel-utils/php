@@ -20,9 +20,16 @@ class InventoryTransaction extends Packet
     public const CLIENTBOUND = false;
     public const SERVERBOUND = true;
 
-
+    public $type;
+    public $actions;
 
     public function __constructor() {}
+
+    public function __constructor($type, $actions)
+    {
+        $this->type = $type;
+        $this->actions = $actions;
+    }
 
     public function getId()
     {
@@ -31,6 +38,7 @@ class InventoryTransaction extends Packet
 
     public function encode()
     {
+
 
     }
 

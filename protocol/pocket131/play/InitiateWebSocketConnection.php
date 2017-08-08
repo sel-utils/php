@@ -20,9 +20,14 @@ class InitiateWebSocketConnection extends Packet
     public const CLIENTBOUND = false;
     public const SERVERBOUND = false;
 
-
+    public $unknown0;
 
     public function __constructor() {}
+
+    public function __constructor($unknown0)
+    {
+        $this->unknown0 = $unknown0;
+    }
 
     public function getId()
     {

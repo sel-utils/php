@@ -32,7 +32,14 @@ class AdventureSettings extends Packet
     public const FLYING = 512;
     public const MUTED = 1024;
 
-    // permissions
+    // permission level
+    public const USER = 0;
+    public const OPERATOR = 1;
+    public const HOST = 2;
+    public const AUTOMATION = 3;
+    public const ADMIN = 4;
+
+    // abilities
     public const BUILD_AND_MINE = 1;
     public const DOORS_AND_SWITCHES = 2;
     public const OPEN_CONTAINERS = 4;
@@ -41,28 +48,27 @@ class AdventureSettings extends Packet
     public const OP = 32;
     public const TELEPORT = 64;
 
-    // permission level
-    public const USER = 0;
-    public const OPERATOR = 1;
-    public const HOST = 2;
-    public const AUTOMATION = 3;
-    public const ADMIN = 4;
+    // player rank
+    public const VISITOR = 0;
+    public const MEMBER = 1;
+    public const OPERATOR = 2;
+    public const CUSTOM = 3;
 
     public $flags;
-    public $unknown1;
-    public $permissions;
     public $permissionLevel;
-    public $entityId;
+    public $abilities;
+    public $playerRank;
+    public $unknown4;
 
     public function __constructor() {}
 
-    public function __constructor($flags, $unknown1, $permissions, $permissionLevel, $entityId)
+    public function __constructor($flags, $permissionLevel, $abilities, $playerRank, $unknown4)
     {
         $this->flags = $flags;
-        $this->unknown1 = $unknown1;
-        $this->permissions = $permissions;
         $this->permissionLevel = $permissionLevel;
-        $this->entityId = $entityId;
+        $this->abilities = $abilities;
+        $this->playerRank = $playerRank;
+        $this->unknown4 = $unknown4;
     }
 
     public function getId()

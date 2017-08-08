@@ -21,20 +21,21 @@ class Interact extends Packet
     public const SERVERBOUND = true;
 
     // action
-    public const INTERACT = 1;
-    public const ATTACK = 2;
     public const LEAVE_VEHICLE = 3;
     public const HOVER = 4;
+    public const OPEN_INVENTORY = 6;
 
     public $action;
     public $target;
+    public $targetPosition;
 
     public function __constructor() {}
 
-    public function __constructor($action, $target)
+    public function __constructor($action, $target, $targetPosition)
     {
         $this->action = $action;
         $this->target = $target;
+        $this->targetPosition = $targetPosition;
     }
 
     public function getId()
@@ -44,6 +45,7 @@ class Interact extends Packet
 
     public function encode()
     {
+
 
 
     }

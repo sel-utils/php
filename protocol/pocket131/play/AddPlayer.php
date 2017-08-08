@@ -31,10 +31,15 @@ class AddPlayer extends Packet
     public $yaw;
     public $heldItem;
     public $metadata;
+    public $unknown11;
+    public $unknown12;
+    public $unknown13;
+    public $unknown14;
+    public $unknown15;
 
     public function __constructor() {}
 
-    public function __constructor(\sul\protocol\pocket131\types\McpeUuid $uuid, $username, $entityId, $runtimeId, $position, $motion, $pitch, $headYaw, $yaw, \sul\protocol\pocket131\types\Slot $heldItem, \sul\metadata\pocket131\Metadata $metadata)
+    public function __constructor(\sul\protocol\pocket131\types\McpeUuid $uuid, $username, $entityId, $runtimeId, $position, $motion, $pitch, $headYaw, $yaw, \sul\protocol\pocket131\types\Slot $heldItem, \sul\metadata\pocket131\Metadata $metadata, $unknown11, $unknown12, $unknown13, $unknown14, $unknown15)
     {
         $this->uuid = $uuid;
         $this->username = $username;
@@ -47,6 +52,11 @@ class AddPlayer extends Packet
         $this->yaw = $yaw;
         $this->heldItem = $heldItem;
         $this->metadata = $metadata;
+        $this->unknown11 = $unknown11;
+        $this->unknown12 = $unknown12;
+        $this->unknown13 = $unknown13;
+        $this->unknown14 = $unknown14;
+        $this->unknown15 = $unknown15;
     }
 
     public function getId()
@@ -56,6 +66,11 @@ class AddPlayer extends Packet
 
     public function encode()
     {
+
+
+
+
+
 
 
 

@@ -20,9 +20,20 @@ class NpcRequest extends Packet
     public const CLIENTBOUND = false;
     public const SERVERBOUND = true;
 
-
+    public $entityId;
+    public $requestType;
+    public $command;
+    public $actionType;
 
     public function __constructor() {}
+
+    public function __constructor($entityId, $requestType, $command, $actionType)
+    {
+        $this->entityId = $entityId;
+        $this->requestType = $requestType;
+        $this->command = $command;
+        $this->actionType = $actionType;
+    }
 
     public function getId()
     {
@@ -31,6 +42,9 @@ class NpcRequest extends Packet
 
     public function encode()
     {
+
+
+
 
     }
 

@@ -12,25 +12,21 @@ namespace sul\protocol\play\pocket131;
 
 use utils\Packet;
 
-class BlockPickRequest extends Packet
+class SetLastHurtBy extends Packet
 {
 
-    public const ID = 34;
+    public const ID = 96;
 
-    public const CLIENTBOUND = false;
-    public const SERVERBOUND = true;
+    public const CLIENTBOUND = true;
+    public const SERVERBOUND = false;
 
-    public $position;
-    public $unknown1;
-    public $slot;
+    public $unknown0;
 
     public function __constructor() {}
 
-    public function __constructor($position, $unknown1, $slot)
+    public function __constructor($unknown0)
     {
-        $this->position = $position;
-        $this->unknown1 = $unknown1;
-        $this->slot = $slot;
+        $this->unknown0 = $unknown0;
     }
 
     public function getId()
@@ -40,8 +36,6 @@ class BlockPickRequest extends Packet
 
     public function encode()
     {
-
-
 
     }
 

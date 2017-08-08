@@ -20,9 +20,28 @@ class PlayerSkin extends Packet
     public const CLIENTBOUND = true;
     public const SERVERBOUND = false;
 
-
+    public $uuid;
+    public $skinId;
+    public $skinName;
+    public $unknown3;
+    public $skinData;
+    public $capeData;
+    public $geometryModel;
+    public $geometryData;
 
     public function __constructor() {}
+
+    public function __constructor(\sul\protocol\pocket131\types\McpeUuid $uuid, $skinId, $skinName, $unknown3, $skinData, $capeData, $geometryModel, $geometryData)
+    {
+        $this->uuid = $uuid;
+        $this->skinId = $skinId;
+        $this->skinName = $skinName;
+        $this->unknown3 = $unknown3;
+        $this->skinData = $skinData;
+        $this->capeData = $capeData;
+        $this->geometryModel = $geometryModel;
+        $this->geometryData = $geometryData;
+    }
 
     public function getId()
     {
@@ -31,6 +50,13 @@ class PlayerSkin extends Packet
 
     public function encode()
     {
+
+
+
+
+
+
+
 
     }
 

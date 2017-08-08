@@ -12,10 +12,10 @@ namespace sul\protocol\play\pocket131;
 
 use utils\Packet;
 
-class SetLastHurt extends Packet
+class ShowProfile extends Packet
 {
 
-    public const ID = 96;
+    public const ID = 104;
 
     public const CLIENTBOUND = true;
     public const SERVERBOUND = false;

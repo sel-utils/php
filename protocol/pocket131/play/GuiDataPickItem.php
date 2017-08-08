@@ -20,9 +20,14 @@ class GuiDataPickItem extends Packet
     public const CLIENTBOUND = false;
     public const SERVERBOUND = true;
 
-
+    public $slot;
 
     public function __constructor() {}
+
+    public function __constructor($slot)
+    {
+        $this->slot = $slot;
+    }
 
     public function getId()
     {
