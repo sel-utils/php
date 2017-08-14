@@ -22,14 +22,16 @@ class AvailableCommands extends Packet
 
     public $enumValues;
     public $unknown1;
+    public $enums;
     public $commands;
 
     public function __constructor() {}
 
-    public function __constructor($enumValues, $unknown1, $commands)
+    public function __constructor($enumValues, $unknown1, $enums, $commands)
     {
         $this->enumValues = $enumValues;
         $this->unknown1 = $unknown1;
+        $this->enums = $enums;
         $this->commands = $commands;
     }
 
@@ -40,6 +42,7 @@ class AvailableCommands extends Packet
 
     public function encode()
     {
+
 
 
 
