@@ -6,7 +6,7 @@
  * 
  * License: https://github.com/sel-project/sel-utils/blob/master/LICENSE
  * Repository: https://github.com/sel-project/sel-utils
- * Generated from https://github.com/sel-project/sel-utils/blob/master/xml/attributes/java338.xml
+ * Generated from https://github.com/sel-project/sel-utils/blob/master/xml/attributes/java340.xml
  */
 namespace sul\attributes;
 
