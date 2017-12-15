@@ -6,7 +6,7 @@
  * 
  * License: https://github.com/sel-project/sel-utils/blob/master/LICENSE
  * Repository: https://github.com/sel-project/sel-utils
- * Generated from https://github.com/sel-project/sel-utils/blob/master/xml/protocol/bedrock137.xml
+ * Generated from https://github.com/sel-project/sel-utils/blob/master/xml/protocol/bedrock160.xml
  */
 namespace sul\protocol\play\bedrock;
 
@@ -28,17 +28,21 @@ class CommandRequest extends Packet
 
     public $command;
     public $type;
+    public $uuid;
     public $requestId;
     public $playerId;
+    public $internal;
 
     public function __constructor() {}
 
-    public function __constructor($command, $type, $requestId, $playerId)
+    public function __constructor($command, $type, \sul\protocol\bedrock\types\McpeUuid $uuid, $requestId, $playerId, $internal)
     {
         $this->command = $command;
         $this->type = $type;
+        $this->uuid = $uuid;
         $this->requestId = $requestId;
         $this->playerId = $playerId;
+        $this->internal = $internal;
     }
 
     public function getId()
@@ -48,6 +52,8 @@ class CommandRequest extends Packet
 
     public function encode()
     {
+
+
 
 
 

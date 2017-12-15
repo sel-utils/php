@@ -6,7 +6,7 @@
  * 
  * License: https://github.com/sel-project/sel-utils/blob/master/LICENSE
  * Repository: https://github.com/sel-project/sel-utils
- * Generated from https://github.com/sel-project/sel-utils/blob/master/xml/protocol/bedrock137.xml
+ * Generated from https://github.com/sel-project/sel-utils/blob/master/xml/protocol/bedrock160.xml
  */
 namespace sul\protocol\play\bedrock;
 
@@ -20,7 +20,7 @@ class Login extends Packet
     public const CLIENTBOUND = false;
     public const SERVERBOUND = true;
 
-    public $protocol = 137;
+    public $protocol = 160;
     public $body;
 
     public function __constructor() {}
