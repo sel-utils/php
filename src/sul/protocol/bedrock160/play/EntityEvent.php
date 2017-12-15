@@ -6,9 +6,9 @@
  * 
  * License: https://github.com/sel-project/sel-utils/blob/master/LICENSE
  * Repository: https://github.com/sel-project/sel-utils
- * Generated from https://github.com/sel-project/sel-utils/blob/master/xml/protocol/bedrock137.xml
+ * Generated from https://github.com/sel-project/sel-utils/blob/master/xml/protocol/bedrock160.xml
  */
-namespace sul\protocol\play\bedrock137;
+namespace sul\protocol\play\bedrock160;
 
 use utils\Packet;
 
@@ -23,6 +23,7 @@ class EntityEvent extends Packet
     // event id
     public const HURT_ANIMATION = 2;
     public const DEATH_ANIMATION = 3;
+    public const ARM_SWING = 4;
     public const TAME_FAIL = 6;
     public const TAME_SUCCESS = 7;
     public const SHAKE_WET = 8;
@@ -33,9 +34,31 @@ class EntityEvent extends Packet
     public const FISH_HOOK_HOOK = 13;
     public const FISH_HOOK_TEASE = 14;
     public const SQUID_INK_CLOUD = 15;
-    public const AMBIENT_SOUND = 16;
-    public const RESPAWN = 17;
-    public const UNLEASH = 63;
+    public const ZOMBIE_VILLAGER_CURE = 16;
+    public const RESPAWN = 18;
+    public const IRON_GOLEM_OFFER_FLOWER = 19;
+    public const IRON_GOLEM_WITHDRAW_FLOWER = 20;
+    public const LOVE_PARTICLES = 21;
+    public const WITCH_SPELL_ANIMATION = 24;
+    public const FIREWORK_PARTICLES = 25;
+    public const SILVERFISH_SPAWN_ANIMATION = 27;
+    public const WITCH_DRINK_POTION = 29;
+    public const WITCH_THROWN_POTION = 30;
+    public const MINECART_TNT_PRIME_FUSE = 31;
+    public const PLAYER_ADD_XP_LEVELS = 34;
+    public const ELDER_GUARDIAN_CURSE = 35;
+    public const AGENT_ARM_SWING = 36;
+    public const ENDER_DRAGON_DEATH = 37;
+    public const DUST_PARTICLES = 38;
+    public const EATING_ITEM = 57;
+    public const BABY_ANIMAL_FEED = 60;
+    public const DEATH_SMOKE_CLOUD = 61;
+    public const COMPLETE_TRADE = 62;
+    public const REMOVE_LEASH = 63;
+    public const CONSUME_TOTEM = 65;
+    public const ENTITY_SPAWN = 67;
+    public const DRAGON_PUKE = 68;
+    public const ITEM_ENTITY_MERGE = 69;
 
     public $entityId;
     public $eventId;
